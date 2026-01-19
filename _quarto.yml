@@ -6,8 +6,13 @@ project:
   preview:
     port: 3333
 
+execute:
+  freeze: auto # re-render only when source changes
+
 website:
   title: "Data Analytics for Sciences"
+  description: "An Introduction to Data Science in Excel and R"
+  site-url: "https://ckaoxvii.github.io/CIS-351-Data-Analytics-for-Sciences/"
   navbar:
     left:
       - href: index.qmd
