@@ -1,0 +1,5 @@
+---
+title: "CIS 351: Data Analytics for Sciences"
+subtitle: "An Introduction to Data Science in Excel and R"
+details: Spring 2016<br>Flagler College
+---
