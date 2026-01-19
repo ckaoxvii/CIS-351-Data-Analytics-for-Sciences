@@ -18,6 +18,13 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+  
+  announcement:
+    icon: calendar-check
+    content: "*Test!*"
+    type: danger
+    position: below-navbar
+
 
 format:
   html:
