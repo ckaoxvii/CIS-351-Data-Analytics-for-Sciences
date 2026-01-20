@@ -1,0 +1,13 @@
+---
+title: "Syllabus"
+format: 
+  html: default
+---
+
+```{r setup, message = FALSE, warning = FALSE, include = FALSE}
+library(tidyverse)
+
+library(tinytable)
+
+knitr::opts_chunk$set(fig.align = 'center')
+```

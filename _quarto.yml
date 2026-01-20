@@ -19,11 +19,11 @@ website:
         text: Home
       - about.qmd
   
-  announcement:
-    icon: calendar-check
-    content: "*Test!*"
-    type: danger
-    position: below-navbar
+  # announcement:
+  #   icon: calendar-check
+  #   content: "*Test!*"
+  #   type: danger
+  #   position: below-navbar
 
 
 format:

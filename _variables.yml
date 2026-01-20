@@ -1,0 +1,17 @@
+author: Chris Kao
+
+instructor:
+  name: Dr. Chris Kao
+  name_no_title: Chris Kao
+  email: ckao@flagler.edu
+  office: "20 Valencia, Office 207B"
+
+course:
+  number: 'CIS 351'
+  semester: 'Spring 2026'
+  days: 'MWF'
+  time: '8:00 AM--8:50 AM'
+  location: 'Proctor Library L315'
+
+college: 
+  name: "Flagler College"
