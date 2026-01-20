@@ -25,14 +25,11 @@ website:
   #   type: danger
   #   position: below-navbar
 
+page-navigation: true
 
-format:
-  html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
-
-
+navbar:
+  pinned: true
+  background: "#A90533"
+  right: 
+    - syllabus.qmd 
 
