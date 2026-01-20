@@ -13,11 +13,6 @@ website:
   title: "Data Analytics for Sciences"
   description: "An Introduction to Data Science in Excel and R"
   site-url: "https://ckaoxvii.github.io/CIS-351-Data-Analytics-for-Sciences/"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
   
   # announcement:
   #   icon: calendar-check
