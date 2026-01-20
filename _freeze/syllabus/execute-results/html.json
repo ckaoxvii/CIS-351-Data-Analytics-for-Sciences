@@ -1,8 +1,8 @@
 {
-  "hash": "a2261343dc98dabaf74894d659780752",
+  "hash": "a7182518062bcb3f89c59f12e48090f3",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Syllabus\"\nformat: \n  html: default\n---\n\n\n\n:::: {.grid .course-details .course-details-smaller}\n\n::: {.g-col-12 .g-col-sm-6 .g-col-md-4}\n### Instructor\n\n- [{{< fa user >}}]{.fa-li} [{{< var instructor.name >}}]\n- [{{< fa university >}}]{.fa-li} {{< var instructor.office >}}\n- [{{< fa envelope >}}]{.fa-li} <a href='mailto:{{< var instructor.email >}}'>{{< var instructor.email >}}</a>\n:::\n\n::: {.g-col-12 .g-col-sm-6 .g-col-md-4}\n### Course details\n\n- [{{< fa calendar >}}]{.fa-li} {{< var course.days >}}\n- [{{< fa calendar-alt >}}]{.fa-li} {{< var course.dates >}}\n- [{{< fa clock >}}]{.fa-li} {{< var course.time >}}\n- [{{< fa location-dot >}}]{.fa-li} {{< var course.location >}}\n:::\n\n::: {.g-col-12 .g-col-md-4 .contact-policy}\n### Contacting me\n\n- [{{< fa calendar-check >}}]{.fa-li} [Schedule an appointment]({{< var instructor_email >}})\n:::\n\n::::",
+    "markdown": "---\ntitle: \"Syllabus\"\nformat: \n  html: default\n---\n\n\n\n:::: {.grid .course-details .course-details-smaller}\n\n::: {.g-col-12 .g-col-sm-6 .g-col-md-4}\n### Instructor\n\n- [{{< fa user >}}]{.fa-li} [{{< var instructor.name >}}]\n:::\n\n::::",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
