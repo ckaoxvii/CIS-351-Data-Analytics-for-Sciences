@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Instructor\n\n{{&lt; fa user &gt;}} [Dr. Chris Kao]\n{{&lt; fa university &gt;}} 20 Valencia, Office 207B\n{{&lt; fa envelope &gt;}} ckao@flagler.edu\n\n\n\nCourse details\n\n{{&lt; fa calendar &gt;}} MWF\n{{&lt; fa calendar-alt &gt;}} ?var:course.dates\n{{&lt; fa clock &gt;}} 8:00 AM–8:50 AM\n{{&lt; fa location-dot &gt;}} Proctor Library L315\n\n\n\nContacting me\n\n{{&lt; fa calendar-check &gt;}} Schedule an appointment"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
