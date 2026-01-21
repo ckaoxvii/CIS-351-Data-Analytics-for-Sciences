@@ -4,7 +4,7 @@
     "href": "syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Instructor\n Dr. Chris Kao  20 Valencia, Office 207B"
+    "text": "Instructor\n\n[{{ var instructor.name }}]"
   },
   {
     "objectID": "about.html",
