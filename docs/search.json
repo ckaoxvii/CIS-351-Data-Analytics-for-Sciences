@@ -4,7 +4,70 @@
     "href": "syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Instructor\n\n Dr. Chris Kao\n 20 Valencia, Office 207B\n ckao@flagler.edu\n\n\n\n\nCourse Details\n\n MWF\n Section A: 8 am–8:50 am\n Section B: 12 pm–12:50 pm\n Proctor Library L304\n\n\n\nOffice Hours\n\n TR, 10 am–12 pm or by appointment"
+    "text": "Dr. Chris Kao\n 20 Valencia, Office 207B\n ckao@flagler.edu\n\n\n\n\n\n\n MWF\n Section A: 8 am–8:50 am\n Section B: 12 pm–12:50 pm\n Proctor Library L304\n\n\n\n\n\n TR, 10 am–12 pm or by appointment"
+  },
+  {
+    "objectID": "syllabus.html#textbook",
+    "href": "syllabus.html#textbook",
+    "title": "Syllabus",
+    "section": "Textbook",
+    "text": "Textbook\nThis website will serve as the primary text for this course. While the course is an introductory one in R (and Excel), below are two authoritative texts in the subject of data science and modeling/machine learning in R with {tidyverse} and {tidymodels} packages.\n\nR for Data Science (2e) by Garret Grolemund and Hadley Wickham\nTidy Modeling with R by Max Kuhn and Julia Silge\n\nAn excellent elementary statistics text written with R as its companion programming language:\n\nIntroduction to Modern Statistics (2e) by Mine Çetinkaya-Rundel and Johanna Hardin."
+  },
+  {
+    "objectID": "syllabus.html#course-description",
+    "href": "syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nUse Excel and R to perform data manipulation, data visualization, and basic statistical analysis in the natural and social sciences."
+  },
+  {
+    "objectID": "syllabus.html#prerequisite",
+    "href": "syllabus.html#prerequisite",
+    "title": "Syllabus",
+    "section": "Prerequisite",
+    "text": "Prerequisite\nCOR 14X or equivalent, or instructor’s permission"
+  },
+  {
+    "objectID": "syllabus.html#expected-student-learning-outcomes",
+    "href": "syllabus.html#expected-student-learning-outcomes",
+    "title": "Syllabus",
+    "section": "Expected Student Learning Outcomes",
+    "text": "Expected Student Learning Outcomes\nUpon completion of the course requirements, students will be able to:\n\nInput, save, and import/export data in Excel and R.\nInstall and load R packages; write R code using the IDE Positron.\nWrite clean and readable R code in Quarto, an open-source scientific and technical publishing system.\nPerform data wrangling using the {dplyr} package.\nCalculate summary statistics in Excel and R.\nCreate data visualizations in Excel and using the {ggplot2} package.\nPerform linear regression, \\(\\chi^2\\)-test, \\(t\\)-test, ANOVA, and Kruskal–Wallis tests in Excel and R."
+  },
+  {
+    "objectID": "syllabus.html#method-of-instruction.",
+    "href": "syllabus.html#method-of-instruction.",
+    "title": "Syllabus",
+    "section": "Method of Instruction.",
+    "text": "Method of Instruction.\nLectures and in-class activities are primary means of instruction in this course. Students are expected to be active participants."
+  },
+  {
+    "objectID": "syllabus.html#methods-of-assessment.",
+    "href": "syllabus.html#methods-of-assessment.",
+    "title": "Syllabus",
+    "section": "Methods of Assessment.",
+    "text": "Methods of Assessment.\n\n1. Participation\n\nSetting up and maintaining effective project workflows and file management are critical to data science best practices.\nYou will submit screenshots (not pictures from your phone) every week to show that you keep up with these practices.\nParticipation counts for 5% of the final grade.\n\n\n\n2. Homework\n\nHomework assignments will be given on a weekly basis.\nLate homework will be penalized at a rate of 10% per calendar day after the due date.\nHomework accounts for 20% of the final grade.\n\n\n\n3. Quizzes\n\nQuizzes will be administered approximately once per week.\nQuizzes constitute 10% of the final grade.\n\n\n\n4. Projects\n\nThree group projects will be assigned throughout the semester, each covering a major course topic. Each project is worth 15% of the final grade.\nA final group project will be due at the end of the semester. You will deliver a 15-minute presentation for the this project. It is worth 20% of the final grade."
+  },
+  {
+    "objectID": "syllabus.html#attendance-policy",
+    "href": "syllabus.html#attendance-policy",
+    "title": "Syllabus",
+    "section": "Attendance Policy",
+    "text": "Attendance Policy\nAttendance is an important part of your personal responsibility in this course. Missing more than 20% (8 classes) may result in withdrawal from the course by the professor, with a grade of “W” or “WF”, in accordance with the Academic Calendar."
+  },
+  {
+    "objectID": "syllabus.html#expectations",
+    "href": "syllabus.html#expectations",
+    "title": "Syllabus",
+    "section": "Expectations",
+    "text": "Expectations\n\nIf you own a laptop, you are expected to bring it to class each day, fully charged so that it will last the entire class session.\nStudents are expected to communicate with the professor using their official Flagler College email account. Messages sent from personal email addresses will not receive a response.\nAll email communication should be conducted in a professional manner, including the use of proper email etiquette and a clear, informative subject line.\nPlease allow up to 24 hours for a response, excluding weekends and holidays."
+  },
+  {
+    "objectID": "syllabus.html#artificial-intelligence-tools-policy.",
+    "href": "syllabus.html#artificial-intelligence-tools-policy.",
+    "title": "Syllabus",
+    "section": "Artificial Intelligence Tools Policy.",
+    "text": "Artificial Intelligence Tools Policy.\n\n1. Acceptable Use of AI Tools\nThe use of generative AI tools such as ChatGPT, Claude, or Gemini, is permitted in this course for the following activities:\n\nBrainstorming and refining ideas.\nFine-tuning research questions for projects.\nFinding information relating to a topic of interest.\nDrafting outlines to organize thoughts.\nChecking spelling, grammar, and style.\n\n\n\n2. Unacceptable Use of AI Tools.\nThe use of generative AI tools is not permitted in this course for the following activities.\n\nCompleting assignments, quizzes, or projects entirely or primarily using generative AI.\n\nYou are responsible for the information you submit based on an AI query. Your use of AI tools must be properly documented and cited in accordance with the college’s policy on academic honesty. Any assignment, quiz, or project that is found to have used generative AI tools in an unauthorized way will receive a grade of 0% for the first offense. A second offense will result in a grade of WF for this course. If you are unsure whether the use of an AI tool is permitted, please consult the professor for guidance or clarification."
   },
   {
     "objectID": "about.html",

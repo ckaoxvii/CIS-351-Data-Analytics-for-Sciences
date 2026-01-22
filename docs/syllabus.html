@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -160,8 +189,113 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </div>
+<section id="textbook" class="level2">
+<h2 class="anchored" data-anchor-id="textbook">Textbook</h2>
+<p>This website will serve as the primary text for this course. While the course is an introductory one in R (and Excel), below are two authoritative texts in the subject of data science and modeling/machine learning in R with <code>{tidyverse}</code> and <code>{tidymodels}</code> packages.</p>
+<ul>
+<li><a href="https://r4ds.hadley.nz/"><em>R for Data Science (2e)</em></a> by Garret Grolemund and Hadley Wickham</li>
+<li><a href="https://www.tmwr.org/"><em>Tidy Modeling with R</em></a> by Max Kuhn and Julia Silge</li>
+</ul>
+<p>An excellent elementary statistics text written with R as its companion programming language:</p>
+<ul>
+<li><a href="https://openintro-ims.netlify.app/"><em>Introduction to Modern Statistics (2e)</em></a> by Mine Çetinkaya-Rundel and Johanna Hardin.</li>
+</ul>
+</section>
+<section id="course-description" class="level2">
+<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
+<p>Use Excel and R to perform data manipulation, data visualization, and basic statistical analysis in the natural and social sciences.</p>
+</section>
+<section id="prerequisite" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisite">Prerequisite</h2>
+<p>COR 14X or equivalent, or instructor’s permission</p>
+</section>
+<section id="expected-student-learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="expected-student-learning-outcomes">Expected Student Learning Outcomes</h2>
+<p>Upon completion of the course requirements, students will be able to:</p>
+<ul>
+<li>Input, save, and import/export data in Excel and R.</li>
+<li>Install and load R packages; write R code using the IDE <em>Positron</em>.</li>
+<li>Write clean and readable R code in <em>Quarto</em>, an open-source scientific and technical publishing system.</li>
+<li>Perform data wrangling using the <code>{dplyr}</code> package.</li>
+<li>Calculate summary statistics in Excel and R.</li>
+<li>Create data visualizations in Excel and using the <code>{ggplot2}</code> package.</li>
+<li>Perform linear regression, <span class="math inline">\(\chi^2\)</span>-test, <span class="math inline">\(t\)</span>-test, ANOVA, and Kruskal–Wallis tests in Excel and R.</li>
+</ul>
+</section>
+<section id="method-of-instruction." class="level2">
+<h2 class="anchored" data-anchor-id="method-of-instruction.">Method of Instruction.</h2>
+<p>Lectures and in-class activities are primary means of instruction in this course. Students are expected to be active participants.</p>
+</section>
+<section id="methods-of-assessment." class="level2">
+<h2 class="anchored" data-anchor-id="methods-of-assessment.">Methods of Assessment.</h2>
+<section id="participation" class="level3">
+<h3 class="anchored" data-anchor-id="participation">1. Participation</h3>
+<ul>
+<li>Setting up and maintaining effective project workflows and file management are critical to data science best practices.</li>
+<li>You will submit screenshots (not pictures from your phone) every week to show that you keep up with these practices.</li>
+<li>Participation counts for <strong>5% of the final grade</strong>.</li>
+</ul>
+</section>
+<section id="homework" class="level3">
+<h3 class="anchored" data-anchor-id="homework">2. Homework</h3>
+<ul>
+<li>Homework assignments will be given on a weekly basis.</li>
+<li>Late homework will be penalized at a rate of <strong>10% per calendar day</strong> after the due date.</li>
+<li>Homework accounts for <strong>20% of the final grade.</strong></li>
+</ul>
+</section>
+<section id="quizzes" class="level3">
+<h3 class="anchored" data-anchor-id="quizzes">3. Quizzes</h3>
+<ul>
+<li>Quizzes will be administered approximately once per week.</li>
+<li>Quizzes constitute <strong>10% of the final grade.</strong></li>
+</ul>
+</section>
+<section id="projects" class="level3">
+<h3 class="anchored" data-anchor-id="projects">4. Projects</h3>
+<ul>
+<li>Three group projects will be assigned throughout the semester, each covering a major course topic. Each project is worth <strong>15% of the final grade.</strong></li>
+<li>A final group project will be due at the end of the semester. You will deliver a 15-minute presentation for the this project. It is worth <strong>20% of the final grade.</strong></li>
+</ul>
+</section>
+</section>
+<section id="attendance-policy" class="level2">
+<h2 class="anchored" data-anchor-id="attendance-policy">Attendance Policy</h2>
+<p>Attendance is an important part of your personal responsibility in this course. <strong><em>Missing more than 20% (8 classes) may result in withdrawal from the course by the professor, with a grade of “W” or “WF”, in accordance with the Academic Calendar.</em></strong></p>
+</section>
+<section id="expectations" class="level2">
+<h2 class="anchored" data-anchor-id="expectations">Expectations</h2>
+<ul>
+<li>If you own a laptop, you are expected to bring it to class each day, fully charged so that it will last the entire class session.</li>
+<li>Students are expected to communicate with the professor using their official Flagler College email account. Messages sent from personal email addresses will not receive a response.</li>
+<li>All email communication should be conducted in a professional manner, including the use of proper email etiquette and a clear, informative subject line.</li>
+<li>Please allow up to 24 hours for a response, excluding weekends and holidays.</li>
+</ul>
+</section>
+<section id="artificial-intelligence-tools-policy." class="level2">
+<h2 class="anchored" data-anchor-id="artificial-intelligence-tools-policy.">Artificial Intelligence Tools Policy.</h2>
+<section id="acceptable-use-of-ai-tools" class="level3">
+<h3 class="anchored" data-anchor-id="acceptable-use-of-ai-tools">1. Acceptable Use of AI Tools</h3>
+<p>The use of generative AI tools such as ChatGPT, Claude, or Gemini, is permitted in this course for the following activities:</p>
+<ul>
+<li>Brainstorming and refining ideas.</li>
+<li>Fine-tuning research questions for projects.</li>
+<li>Finding information relating to a topic of interest.</li>
+<li>Drafting outlines to organize thoughts.</li>
+<li>Checking spelling, grammar, and style.</li>
+</ul>
+</section>
+<section id="unacceptable-use-of-ai-tools." class="level3">
+<h3 class="anchored" data-anchor-id="unacceptable-use-of-ai-tools.">2. Unacceptable Use of AI Tools.</h3>
+<p>The use of generative AI tools is <em>not permitted</em> in this course for the following activities.</p>
+<ul>
+<li>Completing assignments, quizzes, or projects <em>entirely or primarily</em> using generative AI.</li>
+</ul>
+<p>You are responsible for the information you submit based on an AI query. Your use of AI tools must be properly documented and cited in accordance with the college’s policy on academic honesty. Any assignment, quiz, or project that is found to have used generative AI tools in an unauthorized way will receive a grade of 0% for the first offense. <strong><em>A second offense will result in a grade of WF for this course.</em></strong> If you are unsure whether the use of an AI tool is permitted, please consult the professor for guidance or clarification.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
