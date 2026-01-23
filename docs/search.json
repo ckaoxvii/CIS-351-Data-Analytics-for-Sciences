@@ -82,5 +82,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Week\nDay\nTopic\n\n\n\n\n1\n01/21\nSyllabus, Install Apps\n\n\n1\n01/23\nFile Types, Excel Foundation\n\n\n2\n01/26\n\n\n\n2\n01/28\nMath/stats functions; defining variables; {tidyverse} style guide\n\n\n2\n01/30\nR data types: Numeric and character\n\n\n3\n02/02\nR data types: Logical and NA. Type conversion\n\n\n3\n02/04\nAsking questions with logical operators\n\n\n3\n02/06\nDefining vectors, vectorization, summary functions\n\n\n4\n02/09\nExtract information, named vectors, factors\n\n\n4\n02/11\nImporting/loading data; attributes of a data frame\n\n\n4\n02/13\n{dplyr}: select(), filter()\n\n\n5\n02/16\n{dplyr}: The pipe operator\n\n\n5\n02/18\n{dplyr}: summarize(), group_by()\n\n\n5\n02/20\n{dplyr}: count(), arrange()\n\n\n6\n02/23\nProject 1: Data selection; rubric\n\n\n6\n02/25\n{ggplot2}: Grammar of graphics; geom_ objects\n\n\n6\n02/27\n{ggplot2}: Histogram\n\n\n7\n03/02\n{ggplot2}: Barplot\n\n\n7\n03/04\n{ggplot2}: Line graph, {ggpubr}\n\n\n7\n03/06\n{ggplot2}: Boxplot; Project 1 due\n\n\n8\n03/09\nFall Break (Classes Canceled)\n\n\n8\n03/11\n{ggplot2}: Themes, facets\n\n\n8\n03/13\nProject 2 Discussion\n\n\n9\n03/16-03/20\nSpring Break, Classes Canceled\n\n\n10\n03/23\nLinear regression: Single predictor\n\n\n10\n03/25\nLinear regression: Multiple predictors\n\n\n10\n03/27\nIntroduction to hypothesis testing; Project 2 due\n\n\n11\n03/30\nChi-square tests of independence\n\n\n11\n04/01\nFisher’s exact test\n\n\n11\n04/03\nOne-proportion test\n\n\n12\n04/06\nChi-square goodness of fit test\n\n\n12\n04/08\nOne-sample and two-sample t-tests\n\n\n12\n04/10\nANOVA\n\n\n13\n04/13\nWilcoxon test\n\n\n13\n04/15\nKruskal–Wallis test\n\n\n13\n04/17\nWhen to use which test? Project 3 discussion\n\n\n14\n04/20\nProject 3 work day\n\n\n14\n04/22\nProject 3 work day\n\n\n14\n04/24\nProject 3 due\n\n\n15\n04/27\nFinal Project discussion\n\n\n15\n04/29\nFinal Project Workday\n\n\n15\n05/01\nFinal Project Workday\n\n\n16\n05/04\nFinal Project Presentation"
   }
 ]
