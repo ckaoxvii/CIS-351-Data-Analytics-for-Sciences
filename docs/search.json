@@ -81,7 +81,7 @@
     "href": "content/appendix_A.html",
     "title": "Appendix A",
     "section": "",
-    "text": "By default, the macOS Finder does not show the path to the current directory/folder (see below).",
+    "text": "By default, the macOS Finder does not show the path to the current directory/folder.\n\n\n\n\n\nTo show the Path Bar, click View in the menu bar, then select Show Path Bar.\n\n\n\n\n\nOnce selected, the Path Bar will appear at the bottom of the Finder window.",
     "crumbs": [
       "Syllabus",
       "Appendices",
