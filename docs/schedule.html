@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -197,132 +226,132 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>4</td>
 <td>02/13</td>
-<td><strong>R:</strong> <code>select()</code>, <code>filter()</code>, <code>|&gt;</code>, <code>mutate()</code></td>
+<td>Project 1 discussion</td>
 </tr>
 <tr class="even">
 <td>5</td>
 <td>02/16</td>
-<td><strong>R:</strong> <code>summarize()</code>, <code>group_by()</code>, <code>count()</code>, <code>arrange()</code><br><strong>Excel:</strong> sorting</td>
+<td><strong>R:</strong> <code>select()</code>, <code>filter()</code>, <code>mutate()</code></td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>02/18</td>
-<td><strong>R:</strong> <code>pivot_longer()</code>, <code>pivot_wider()</code>, <code>replace_na()</code></td>
+<td><strong>R:</strong> <code>summarize()</code>, <code>group_by()</code>, <code>count()</code>, <code>arrange()</code><br><strong>Excel:</strong> sorting</td>
 </tr>
 <tr class="even">
 <td>5</td>
 <td>02/20</td>
-<td></td>
+<td><strong>R:</strong> <code>pivot_longer()</code>, <code>pivot_wider()</code>, <code>replace_na()</code></td>
 </tr>
 <tr class="odd">
 <td>6</td>
 <td>02/23</td>
-<td></td>
+<td><strong>R:</strong> <code>{ggplot2}</code>, grammar of graphics, <code>geom_</code> objects</td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>02/25</td>
-<td></td>
+<td>Histograms</td>
 </tr>
 <tr class="odd">
 <td>6</td>
 <td>02/27</td>
-<td></td>
+<td>Bar charts</td>
 </tr>
 <tr class="even">
 <td>7</td>
 <td>03/02</td>
-<td></td>
+<td>Dependent and independent variables, scatter plots</td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>03/04</td>
-<td></td>
+<td>Line graphs</td>
 </tr>
 <tr class="even">
 <td>7</td>
 <td>03/06</td>
-<td></td>
+<td>Box plots</td>
 </tr>
 <tr class="odd">
 <td>8</td>
 <td>03/09</td>
-<td></td>
+<td><strong>R:</strong> <code>{ggplot2}</code>, themes</td>
 </tr>
 <tr class="even">
 <td>8</td>
 <td>03/11</td>
-<td></td>
+<td>Project 2 discussion</td>
 </tr>
 <tr class="odd">
 <td>8</td>
 <td>03/13</td>
-<td></td>
+<td><strong>R:</strong> <code>{ggplot2}</code>, facets</td>
 </tr>
 <tr class="even">
 <td>9</td>
-<td>03/16-03/20</td>
+<td>03/16–03/20</td>
 <td><em>Spring Break, Classes Canceled</em></td>
 </tr>
 <tr class="odd">
 <td>10</td>
 <td>03/23</td>
-<td></td>
+<td>Linear regression: single predictor</td>
 </tr>
 <tr class="even">
 <td>10</td>
 <td>03/25</td>
-<td></td>
+<td>Linear regression: multiple predictors</td>
 </tr>
 <tr class="odd">
 <td>10</td>
 <td>03/27</td>
-<td></td>
+<td>Introduction to hypothesis testing</td>
 </tr>
 <tr class="even">
 <td>11</td>
 <td>03/30</td>
-<td></td>
+<td>Chi-square test of independence</td>
 </tr>
 <tr class="odd">
 <td>11</td>
 <td>04/01</td>
-<td></td>
+<td>Fisher’s exact test</td>
 </tr>
 <tr class="even">
 <td>11</td>
 <td>04/03</td>
-<td></td>
+<td>One-proportion test</td>
 </tr>
 <tr class="odd">
 <td>12</td>
 <td>04/06</td>
-<td></td>
+<td>Chi-square goodness of fit</td>
 </tr>
 <tr class="even">
 <td>12</td>
 <td>04/08</td>
-<td></td>
+<td>One-sample and two-sample <span class="math inline">\(t\)</span> tests</td>
 </tr>
 <tr class="odd">
 <td>12</td>
 <td>04/10</td>
-<td></td>
+<td>ANOVA</td>
 </tr>
 <tr class="even">
 <td>13</td>
 <td>04/13</td>
-<td></td>
+<td>Wilcoxon test</td>
 </tr>
 <tr class="odd">
 <td>13</td>
 <td>04/15</td>
-<td></td>
+<td>Kruskal–Wallis test</td>
 </tr>
 <tr class="even">
 <td>13</td>
 <td>04/17</td>
-<td></td>
+<td>When to use which test?</td>
 </tr>
 <tr class="odd">
 <td>14</td>
@@ -342,17 +371,17 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>15</td>
 <td>04/27</td>
-<td></td>
+<td>Final Project work day</td>
 </tr>
 <tr class="odd">
 <td>15</td>
 <td>04/29</td>
-<td></td>
+<td>Final Project work day</td>
 </tr>
 <tr class="even">
 <td>15</td>
 <td>05/01</td>
-<td></td>
+<td><em>Reading Day: Classes Canceled</em></td>
 </tr>
 <tr class="odd">
 <td>16</td>
