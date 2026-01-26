@@ -81,7 +81,12 @@
     "href": "content/appendix_B.html",
     "title": "Appendix B",
     "section": "",
-    "text": "If you wish to maximize the working window in macOS, it is preferable not to do a full-screen maximization. In stead, hover (not click) the cursor to the green traffic light icon on the top left of the app window, then select the maximize window option. This option will retain the menu bar on top of screen."
+    "text": "If you wish to maximize the working window in macOS, it is preferable not to do a full-screen maximization. In stead, hover (not click) the cursor to the green traffic light icon on the top left of the app window, then select the maximize window option. This option will retain the menu bar on top of screen.",
+    "crumbs": [
+      "Syllabus",
+      "Appendices",
+      "Appendix B"
+    ]
   },
   {
     "objectID": "about.html",
