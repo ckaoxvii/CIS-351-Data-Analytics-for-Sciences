@@ -100,14 +100,24 @@
     "href": "content/section_0102.html#windows",
     "title": "Foundation",
     "section": "Windows",
-    "text": "Windows"
+    "text": "Windows",
+    "crumbs": [
+      "Syllabus",
+      "Foundations",
+      "Foundation"
+    ]
   },
   {
     "objectID": "content/section_0102.html#macos",
     "href": "content/section_0102.html#macos",
     "title": "Foundation",
     "section": "macOS",
-    "text": "macOS"
+    "text": "macOS",
+    "crumbs": [
+      "Syllabus",
+      "Foundations",
+      "Foundation"
+    ]
   },
   {
     "objectID": "schedule.html",
