@@ -7,5 +7,23 @@
   },
   "syllabus.qmd": {
     "syllabus.html": "0c8554b9"
+  },
+  "schedule.qmd": {
+    "schedule.html": "a6a6d283"
+  },
+  "content/section_01_01.qmd": {
+    "section_01_01.html": "56c43061"
+  },
+  "content/appendix_A.qmd": {
+    "appendix_A.html": "2e164403"
+  },
+  "content/section_0102.qmd": {
+    "section_0102.html": "c1b24c4a"
+  },
+  "content/appendix_B.qmd": {
+    "appendix_B.html": "8a88af84"
+  },
+  "content/section_0103.qmd": {
+    "section_0103.html": "eb8784ee"
   }
 }

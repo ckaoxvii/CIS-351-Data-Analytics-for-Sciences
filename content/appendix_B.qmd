@@ -1,0 +1,9 @@
+---
+title: "Appendix B"
+subtitle: "Maximize Window in macOS"
+---
+
+If you wish to maximize the working window in macOS, it is preferable not to use full-screen mode. Instead, hover (do not click) your cursor over the green traffic light button in the top-left corner of the app window, then select maximize. This option retains the menu bar at the top of the screen.
+
+![](/figs/appendix_B_gif_1.gif){width=90% fig-align="center"}
+

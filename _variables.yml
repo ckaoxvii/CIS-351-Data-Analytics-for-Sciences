@@ -10,8 +10,12 @@ course:
   number: 'CIS 351'
   semester: 'Spring 2026'
   days: 'MWF'
-  time: '8:00 AM--8:50 AM'
-  location: 'Proctor Library L315'
+  timeA: '8 am--8:50 am'
+  timeB: '12 pm--12:50 pm'
+  location: 'Proctor Library L304'
+  copyright_year: 2026
 
 college: 
   name: "Flagler College"
+
+office_hours: 'TR, 10 am--12 pm'

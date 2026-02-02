@@ -1,0 +1,21 @@
+---
+title: "Section 1.3: Data Entry and Formulas in Excel"
+---
+
+### Working in Excel
+
+There are two basic ways of working with data in Excel. The first is **data entry**, and the second is working with **formulas**. **Data entry** is the process of recording the values of a dataset into an Excel workbook. Working with **formulas** allows us to perform mathematical manipulations on existing data.
+
+### Data Entry In Excel
+
+When performing data entry in Excel, we want to adhere to the **tidy data principles.**
+
+::: tidy-principles
+## Tidy Data Principles
+
+A data set is **tidy** if
+
+1. Each variable is a column; each column is a variable.
+2. Each observation is a row; each row is an observation.
+3. Each value is a cell; each cell is a value.
+:::

@@ -1,0 +1,62 @@
+---
+title: "Schedule"
+sidebar: false
+toc: false
+page-layout: full
+freeze: false
+---
+
+```{r packages-data, include=FALSE}
+library(tidyverse)
+
+library(knitr)
+
+library(kableExtra)
+```
+
+| Week | Day | Topic |
+|------|-----|-------|
+| 1 | 01/21 | Install apps, file management |
+| 1 | 01/23 | Syllabus<br>**Excel:** spreadsheet structure, column/row convention, data entry, sheets, saving file |
+| 2 | 01/26 | **R:** Positron, R scripts, R console, Quarto docs |
+| 2 | 01/28 | **R:** math, code comments, scientific notation<br>**Excel:** math, `COUNT`, `COUNTIF` |
+| 2 | 01/30 | Tidy data principle, data types |
+| 3 | 02/02 | **R:** type conversion<br>**Excel:** change number type |
+| 3 | 02/04 | **R:** import data<br>**Excel:** find and replace |
+| 3 | 02/06 | **R:** Asking questions using logical operators |
+| 4 | 02/09 | **R:** defining vectors, vectorization, descriptive statistics<br>**Excel:** descriptive statistics |
+| 4 | 02/11 | **R:** Extract information, named vectors, factors |
+| 4 | 02/13 | Project 1 discussion |
+| 5 | 02/16 | **R:** `select()`, `filter()`, `mutate()` |
+| 5 | 02/18 | **R:** `summarize()`, `group_by()`, `count()`, `arrange()`<br>**Excel:** sorting |
+| 5 | 02/20 | **R:** `pivot_longer()`, `pivot_wider()`, `replace_na()` |
+| 6 | 02/23 | **R:** `{ggplot2}`, grammar of graphics, `geom_` objects |
+| 6 | 02/25 | Histograms |
+| 6 | 02/27 | Bar charts |
+| 7 | 03/02 | Dependent and independent variables, scatter plots |
+| 7 | 03/04 | Line graphs |
+| 7 | 03/06 | Box plots |
+| 8 | 03/09 | Project 2 discussion |
+| 8 | 03/11 | **R:** `{ggplot2}`, themes |
+| 8 | 03/13 | **R:** `{ggplot2}`, facets |
+| 9 | 03/16–03/20 | _Spring Break, Classes Canceled_ |
+| 10 | 03/23 | Linear regression: single predictor |
+| 10 | 03/25 | Linear regression: multiple predictors |
+| 10 | 03/27 | Introduction to hypothesis testing |
+| 11 | 03/30 | Chi-square test of independence |
+| 11 | 04/01 | Fisher's exact test |
+| 11 | 04/03 | One-proportion test |
+| 12 | 04/06 | Chi-square goodness of fit |
+| 12 | 04/08 | One-sample $t$-test |
+| 12 | 04/10 | Two-sample $t$-test |
+| 13 | 04/13 | ANOVA |
+| 13 | 04/15 | Wilcoxon test |
+| 13 | 04/17 | Kruskal–Wallis test |
+| 14 | 04/20 | Project 3 disucssion |
+| 14 | 04/22 | When to use which test? Part 1 |
+| 14 | 04/24 | When to use which test? Part 2 |
+| 15 | 04/27 | Final Project work day |
+| 15 | 04/29 | Final Project work day |
+| 15 | 05/01 | _Reading Day: Classes Canceled_ |
+| 16 | 05/04 | Final Project Presentation |
+: {.striped .hover}

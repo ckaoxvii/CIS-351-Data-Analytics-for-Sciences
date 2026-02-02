@@ -1,0 +1,16 @@
+---
+title: Appendix A
+subtitle: Show the Path Bar in macOS Finder
+---
+
+By default, the macOS Finder does not show the path to the current directory/folder.
+
+![](/figs/appendix_A_fig_1.png){width=90% fig-align="center"}
+
+To show the Path Bar, click **View** in the menu bar, then select **Show Path Bar**.
+
+![](/figs/appendix_A_fig_2.png){width=90% fig-align="center"}
+
+Once selected, the Path Bar will appear at the bottom of the Finder window.
+
+![](/figs/appendix_A_fig_3.png){width=90% fig-align="center"}
