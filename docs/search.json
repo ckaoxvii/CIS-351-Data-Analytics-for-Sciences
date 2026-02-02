@@ -77,23 +77,16 @@
     "text": "Grading Scale\n\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Grade\n                Range\n                Grade\n                Range\n              \n        \n        \n        \n                \n                  A\n                  93–100%\n                  C\n                  73–76%\n                \n                \n                  A−\n                  90–92%\n                  C−\n                  70–72%\n                \n                \n                  B+\n                  87–89%\n                  D+\n                  67–69%\n                \n                \n                  B\n                  83–86%\n                  D\n                  60–66%\n                \n                \n                  B−\n                  80–82%\n                  F\n                  &lt; 60%\n                \n                \n                  C+\n                  77–79%"
   },
   {
-    "objectID": "content/appendix_B.html",
-    "href": "content/appendix_B.html",
-    "title": "Appendix B",
+    "objectID": "content/section_0102.html",
+    "href": "content/section_0102.html",
+    "title": "Section 1.2: Introduction to Excel",
     "section": "",
-    "text": "If you wish to maximize the working window in macOS, it is preferable not to use full-screen mode. Instead, hover (do not click) your cursor over the green traffic light button in the top-left corner of the app window, then select maximize. This option retains the menu bar at the top of the screen.",
+    "text": "Let us now open the Excel app.\n\nWindowsmacOS\n\n\nTo open Excel in Windows, type in “Excel” in the Windows search bar and click on the Excel icon to open the app. Alternatively, you can press the Windows key to bring up the search bar in the Start Menu.\n\n\n\n\n\n\n\nTo open Excel in macOS, open the Spotlight search bar by pressing Cmd + Space, then type in “Excel”.\n\n\n\n\n\n\n\n\nExcel will first open to its template window. To begin data entry, double click on Blank Workbook.\n\n\n\n\n\nThere are two main parts to each Excel spreadsheet: the sheets and the Ribbon.\n\nThe sheet is the area where you enter and view data, including values and formulas.\nThe Ribbon provides shortcuts to Excel commands and tools, making it easier to format, organize, and analyze your spreadsheet.\n\n\n\nThe Ribbon\nThe row above the Ribbon are the Tabs, it is a menu of different groups of commands. An icon in the Ribbon is called a command. Sometimes a command icon has a dropdown menu which displays more commands.\n\n\n\nThe Sheet\nA sheet is a spreadsheet made up of columns and rows. Each individual rectangle within the sheet is called a cell. Cells are where you enter data, such as values and formulas.\n\nColumns are labeled using the English alphabet: A, B, C, etc.\nRows are labeled with numbers: 1, 2, 3, etc.\n\nEach cell is identified by its column letter and row number, such as A1 or C5. When a cell is highlighted, its reference value is displayed in the Name Box.\n\nEach sheet is labeled by the sheet tab at the bottom of each sheet.\n\nTo rename a sheet, right click (or click with two fingers) to bring up the context menu and select Rename.\n\n\n\nWorking with Multiple Sheets\nIt is possible to work with multiple datasets by saving them on separate sheets within the same Excel workbook. There are several ways to add a new sheet in the current workbook. The easiest method is to click on the “+” symbol to the right of the sheet name tab.",
     "crumbs": [
       "Syllabus",
-      "Appendices",
-      "Appendix B"
+      "Chapter 1: Foundations",
+      "Section 1.2: Introduction to Excel"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "content/appendix_A.html",
@@ -108,15 +101,34 @@
     ]
   },
   {
-    "objectID": "content/section_0102.html",
-    "href": "content/section_0102.html",
-    "title": "Section 1.2: Introduction to Excel",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Let us now open the Excel app.\n\nWindowsmacOS\n\n\nTo open Excel in Windows, type in “Excel” in the Windows search bar and click on the Excel icon to open the app. Alternatively, you can press the Windows key to bring up the search bar in the Start Menu.\n\n\n\n\n\n\n\nTo open Excel in macOS, open the Spotlight search bar by pressing Cmd + Space, then type in “Excel”.\n\n\n\n\n\n\n\n\nExcel will first open to its template window. To begin data entry, double click on Blank Workbook.\n\n\n\n\n\nThere are two main parts to each Excel spreadsheet: the sheets and the Ribbon.\n\nThe sheet is the area where you enter and view data, including values and formulas.\nThe Ribbon provides shortcuts to Excel commands and tools, making it easier to format, organize, and analyze your spreadsheet.\n\n\n\nThe Ribbon\nThe row above the Ribbon are the Tabs, it is a menu of different groups of commands. An icon in the Ribbon is called a command. Sometimes a command icon has a dropdown menu which displays more commands.\n\n\n\nThe Sheet\nA sheet is a spreadsheet made up of columns and rows. Each individual rectangle within the sheet is called a cell. Cells are where you enter data, such as values and formulas.\n\nColumns are labeled using the English alphabet: A, B, C, etc.\nRows are labeled with numbers: 1, 2, 3, etc.\n\nEach cell is identified by its column letter and row number, such as A1 or C5. When a cell is highlighted, its reference value is displayed in the Name Box.\n\nEach sheet is labeled by the sheet tab at the bottom of each sheet.\n\nTo rename a sheet, right click (or click with two fingers) to bring up the context menu and select Rename.",
+    "text": "About this site"
+  },
+  {
+    "objectID": "content/appendix_B.html",
+    "href": "content/appendix_B.html",
+    "title": "Appendix B",
+    "section": "",
+    "text": "If you wish to maximize the working window in macOS, it is preferable not to use full-screen mode. Instead, hover (do not click) your cursor over the green traffic light button in the top-left corner of the app window, then select maximize. This option retains the menu bar at the top of the screen.",
     "crumbs": [
       "Syllabus",
-      "Foundations",
-      "Section 1.2: Introduction to Excel"
+      "Appendices",
+      "Appendix B"
+    ]
+  },
+  {
+    "objectID": "content/section_0103.html",
+    "href": "content/section_0103.html",
+    "title": "Section 1.3: Data Entry and Formulas in Excel",
+    "section": "",
+    "text": "Working in Excel",
+    "crumbs": [
+      "Syllabus",
+      "Chapter 1: Foundations",
+      "Section 1.3: Data Entry and Formulas in Excel"
     ]
   },
   {
