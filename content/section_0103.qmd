@@ -18,4 +18,6 @@ A data set is **tidy** if
 1. Each variable is a column; each column is a variable.
 2. Each observation is a row; each row is an observation.
 3. Each value is a cell; each cell is a value.
+
+![](/figs/sec_0103_fig_1.png)
 :::
