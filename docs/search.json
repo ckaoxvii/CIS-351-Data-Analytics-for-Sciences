@@ -124,19 +124,7 @@
     "href": "content/section_0103.html",
     "title": "Section 1.3: Data Entry and Formulas in Excel",
     "section": "",
-    "text": "There are two basic ways of working with data in Excel. The first is data entry, and the second is working with formulas. Data entry is the process of recording the values of a dataset into an Excel workbook. Working with formulas allows us to perform mathematical manipulations on existing data.",
-    "crumbs": [
-      "Syllabus",
-      "Chapter 1: Foundations",
-      "Section 1.3: Data Entry and Formulas in Excel"
-    ]
-  },
-  {
-    "objectID": "content/section_0103.html#tidy-data-principles",
-    "href": "content/section_0103.html#tidy-data-principles",
-    "title": "Section 1.3: Data Entry and Formulas in Excel",
-    "section": "Tidy Data Principles",
-    "text": "Tidy Data Principles\nA data set is tidy if\n\nEach variable is a column; each column is a variable.\nEach observation is a row; each row is an observation.\nEach value is a cell; each cell is a value.",
+    "text": "Working in Excel\nThere are two basic ways of working with data in Excel. The first is data entry, and the second is working with formulas. Data entry is the process of recording the values of a dataset into an Excel workbook. Working with formulas allows us to perform mathematical manipulations on existing data.\n\n\nData Entry In Excel\nWhen performing data entry in Excel, we want to adhere to the tidy data principles.\n\n\n\n\n\n\nTidydataTidy Data Principles\n\n\n\nA data set is tidy if\n\nEach variable is a column; each column is a variable.\nEach observation is a row; each row is an observation.\nEach value is a cell; each cell is a value.",
     "crumbs": [
       "Syllabus",
       "Chapter 1: Foundations",
