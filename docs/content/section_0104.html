@@ -74,17 +74,17 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-convention.callout {
-  border-left-color: orange;
+div.callout-tidydata.callout {
+  border-left-color: #A90533;
 }
-div.callout-convention.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
+div.callout-tidydata.callout-style-default > .callout-header {
+  background-color: rgba(169, 5, 51, 0.13);
 }
-div.callout-convention .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-convention.callout-style-default .callout-icon::before, div.callout-convention.callout-titled .callout-icon::before {
+div.callout-tidydata .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-tidydata.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f071' !important;
+  content: '\f02d' !important;
   background-image: none;
 }
 div.callout-example.callout {
@@ -100,17 +100,17 @@ div.callout-example.callout-style-default .callout-icon::before, div.callout-exa
   content: '\f303' !important;
   background-image: none;
 }
-div.callout-tidydata.callout {
-  border-left-color: #A90533;
+div.callout-convention.callout {
+  border-left-color: orange;
 }
-div.callout-tidydata.callout-style-default > .callout-header {
-  background-color: rgba(169, 5, 51, 0.13);
+div.callout-convention.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
 }
-div.callout-tidydata .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-tidydata.callout-titled .callout-icon::before {
+div.callout-convention .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-convention.callout-style-default .callout-icon::before, div.callout-convention.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f02d' !important;
+  content: '\f071' !important;
   background-image: none;
 }
 </style>
@@ -273,8 +273,8 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
 <p>Below is a list of arithmetic operations with corresponding symbols on your keyboard.</p>
 <table class="table-striped table-hover caption-top table">
 <colgroup>
-<col style="width: 77%">
-<col style="width: 22%">
+<col style="width: 58%">
+<col style="width: 41%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -416,10 +416,21 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Answer</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Open the <code>penguins.csv</code> file in Excel. Insert a new column next to <code>bill_length_mm</code> and covert the bill length values from millimeters (mm) to inches (in). <em>Note:</em> 1 mm is roughly equal to 0.03937 inches.</p>
+<p>Open the <code>penguins.csv</code> file in Excel. Insert a new column next to <code>bill_length_mm</code> and convert the bill length values from millimeters (mm) to inches (in). <em>Note:</em> 1 mm is roughly equal to 0.03937 inches.</p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-
+<p><strong>Step 1.</strong> When opening a <code>.csv</code> file in Excel, you may be prompted with a warning message asking you to save the file in an Excel format. Click on <code>Save As...</code> and save the file as an Excel workbook. (I am saving this in the Week 2 folder, but it might be different for you.)</p>
+<p><img src="../figs/sec_0104_gif_4.gif" class="img-fluid"></p>
+<p><strong>Step 2.</strong> Adjust the column widths for columns <code>C</code>, <code>D</code>, <code>E</code>, and <code>F</code> so you can read the column headers in their entirety. Hold down <kbd title="Ctrl" aria-hidden="true">Ctrl</kbd><span class="visually-hidden">Ctrl</span> (or <kbd title="Command" aria-hidden="true">Command</kbd><span class="visually-hidden">Command</span> in macOs) and click on the columns. Then click on the <code>Format</code> command icon and select <code>AutoFit Column Width</code>.</p>
+<p><img src="../figs/sec_0104_gif_5.gif" class="img-fluid"></p>
+<p><strong>Step 3.</strong> Add a new empty column to the right of <code>bill_length_mm</code> column by first selecting column <code>D</code> (<code>bill_depth_mm</code>). Then right click (or click with two fingers) to bring up the context menu. Select <code>Insert</code> from the menu.</p>
+<p><img src="../figs/sec_0104_gif_6.gif" class="img-fluid"></p>
+<p><strong>Step 4.</strong> Name the new column <code>bill_length_in</code> in cell <code>D1</code>.</p>
+<p><img src="../figs/sec_0104_gif_7.gif" class="img-fluid"></p>
+<p><strong>Step 5.</strong> In cell <code>D2</code>, enter the formula <code>=C2*0.03937</code> to convert the bill length in <code>C2</code> from millimeters (mm) to inches (in). Then complete the calculation by pressing <kbd title="Enter" aria-hidden="true">Enter</kbd><span class="visually-hidden">Enter</span>/<kbd title="Return" aria-hidden="true">Return</kbd><span class="visually-hidden">Return</span></p>
+<p><img src="../figs/sec_0104_gif_8.gif" class="img-fluid"></p>
+<p><strong>Step 6.</strong> Hover your cursor over the green square on the lower-right corner of cell <code>D2</code>. When the cursor turns into a black <code>+</code>, double click to fast-fill the formula down the column.</p>
+<p><img src="../figs/sec_0104_gif_9.gif" class="img-fluid"></p>
 </div>
 </div>
 </div>
