@@ -148,7 +148,7 @@
     "href": "content/section_0104.html",
     "title": "Section 1.4: Using Formulas in Excel",
     "section": "",
-    "text": "We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.\nTo create a basic formula (i.e., any mathematical/statistical calculations), we start the calculation with an = symbol.",
+    "text": "We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.\nTo create a basic formula (i.e., any mathematical/statistical calculations), we start the calculation with an = symbol. Note that the formula =1+1 shows up at two different places in your sheet. One in the cell where you input the formula, the other in the formula bar.\n\n\n\n\n\nPress EnterEnter to perform the calculation. Note that A1 gives the result of the calculation, but the Formula Bar still displays the original equation.",
     "crumbs": [
       "Syllabus",
       "Chapter 1: Foundations",
