@@ -38,6 +38,7 @@ website:
           contents:
             - file: content/section_0102.qmd
             - file: content/section_0103.qmd
+            - file: content/section_0104.qmd
         - section: 'Appendices'
           contents:
             - text: "Appendix A"
@@ -51,9 +52,23 @@ website:
 
 format: 
   html:
+    toc: true
     theme:
       - html/custom.scss
+    link-external-newwindow: true
+    link-external-icon: true 
 
 custom-callout:
-  tidy-principles:
-    color: "#CF902A"
+  tidydata:
+    icon-symbol: 'fa-book'
+    color: "#A90533"
+  example:
+    icon-symbol: "fa-pencil"
+    color: "#1B2AFA"
+  convention:
+    title: "Convention"
+    icon-symbol: "fa-warning"
+    color: "orange"
+  
+filters:
+- custom-callout
