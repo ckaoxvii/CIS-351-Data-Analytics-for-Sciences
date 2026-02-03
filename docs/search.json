@@ -89,6 +89,18 @@
     ]
   },
   {
+    "objectID": "content/section_0103.html#example-1.3.1.",
+    "href": "content/section_0103.html#example-1.3.1.",
+    "title": "Section 1.3: Data Entry in Excel",
+    "section": "Example 1.3.1.",
+    "text": "Example 1.3.1.\nThe table below is an example of tidy data.\n\n\n\nName\nBreed\nWeight (lbs)\n\n\n\n\nBella\nLabrador Retriever\n65\n\n\nMax\nGerman Shepherd\n75\n\n\nCarter\nMixed\n68\n\n\nDaisy\nBeagle\n22\n\n\nLucy\nMixed\n40\n\n\nRocky\nBulldog\n50\n\n\nMolly\nBeagle\n20\n\n\nBuddy\nSiberian Husky\n60\n\n\nSadie\nMixed\n35\n\n\nCooper\nBulldog\n48",
+    "crumbs": [
+      "Syllabus",
+      "Chapter 1: Foundations",
+      "Section 1.3: Data Entry in Excel"
+    ]
+  },
+  {
     "objectID": "content/section_0103.html#footnotes",
     "href": "content/section_0103.html#footnotes",
     "title": "Section 1.3: Data Entry in Excel",
@@ -148,7 +160,19 @@
     "href": "content/section_0104.html",
     "title": "Section 1.4: Using Formulas in Excel",
     "section": "",
-    "text": "We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.\nTo create a basic formula (i.e., any mathematical/statistical calculations), we start the calculation with an = symbol. Note that the formula =1+1 appears in two different places in your sheet: one in the cell where you input the formula, the other in the Formula Bar.\n\n\n\n\n\nPress EnterEnter (returnreturn in macOS) to perform the calculation. Note that cell A1 gives the result of the calculation, but the Formula Bar still displays the original equation.",
+    "text": "We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.",
+    "crumbs": [
+      "Syllabus",
+      "Chapter 1: Foundations",
+      "Section 1.4: Using Formulas in Excel"
+    ]
+  },
+  {
+    "objectID": "content/section_0104.html#footnotes",
+    "href": "content/section_0104.html#footnotes",
+    "title": "Section 1.4: Using Formulas in Excel",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n1 lb is roughly equal to 0.453592 kg.↩︎",
     "crumbs": [
       "Syllabus",
       "Chapter 1: Foundations",

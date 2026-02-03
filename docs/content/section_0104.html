@@ -74,6 +74,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
+div.callout-tidydata.callout {
+  border-left-color: #A90533;
+}
+div.callout-tidydata.callout-style-default > .callout-header {
+  background-color: rgba(169, 5, 51, 0.13);
+}
+div.callout-tidydata .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-tidydata.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f02d' !important;
+  background-image: none;
+}
 div.callout-example.callout {
   border-left-color: #1B2AFA;
 }
@@ -98,19 +111,6 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f071' !important;
-  background-image: none;
-}
-div.callout-tidydata.callout {
-  border-left-color: #A90533;
-}
-div.callout-tidydata.callout-style-default > .callout-header {
-  background-color: rgba(169, 5, 51, 0.13);
-}
-div.callout-tidydata .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-tidydata.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f02d' !important;
   background-image: none;
 }
 </style>
@@ -223,8 +223,15 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#creating-formulas" id="toc-creating-formulas" class="nav-link active" data-scroll-target="#creating-formulas">Creating Formulas</a></li>
+  <li><a href="#creating-formulas-with-cells-and-fast-fill-down-a-column" id="toc-creating-formulas-with-cells-and-fast-fill-down-a-column" class="nav-link" data-scroll-target="#creating-formulas-with-cells-and-fast-fill-down-a-column">Creating Formulas with Cells and Fast-Fill Down a Column</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -249,6 +256,8 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
 
 
 <p>We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.</p>
+<section id="creating-formulas" class="level3">
+<h3 class="anchored" data-anchor-id="creating-formulas">Creating Formulas</h3>
 <p>To create a basic formula (i.e., any mathematical/statistical calculations), we start the calculation with an <code>=</code> symbol. Note that the formula <code>=1+1</code> appears in two different places in your sheet: one in the cell where you input the formula, the other in the <strong>Formula Bar.</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -261,10 +270,162 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
 <p><img src="../figs/sec_0104_fig_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
 </figure>
 </div>
+<p>Below is a list of arithmetic operations with corresponding symbols on your keyboard.</p>
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 77%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Arithmetic Operation</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Addition (+)</td>
+<td><p><kbd title="+" aria-hidden="true">+</kbd><span class="visually-hidden">+</span></p></td>
+</tr>
+<tr class="even">
+<td>Subtraction (−)</td>
+<td><p><kbd title="-" aria-hidden="true">-</kbd><span class="visually-hidden">-</span></p></td>
+</tr>
+<tr class="odd">
+<td>Multiplication (*)</td>
+<td><p><kbd title="*" aria-hidden="true">*</kbd><span class="visually-hidden">*</span></p></td>
+</tr>
+<tr class="even">
+<td>Division (/)</td>
+<td><p><kbd title="/" aria-hidden="true">/</kbd><span class="visually-hidden">/</span></p></td>
+</tr>
+<tr class="odd">
+<td>Exponentiation (^)</td>
+<td><p><kbd title="^" aria-hidden="true">^</kbd><span class="visually-hidden">^</span></p></td>
+</tr>
+<tr class="even">
+<td>Parentheses ( )</td>
+<td><kbd title="(" aria-hidden="true">(</kbd><span class="visually-hidden">(</span> <kbd title=")" aria-hidden="true">)</kbd><span class="visually-hidden">)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="creating-formulas-with-cells-and-fast-fill-down-a-column" class="level3">
+<h3 class="anchored" data-anchor-id="creating-formulas-with-cells-and-fast-fill-down-a-column">Creating Formulas with Cells and Fast-Fill Down a Column</h3>
+<div class="callout callout-style-default callout-example callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Example</span>Example 1.4.1.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Answer</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Consider the following table from Example 1.3.1. Suppose we wish to create a new column with the dogs’ weights in kilograms. How can we do this efficiently in Excel (i.e., without typing a separate formula for each dog)?</p>
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Breed</th>
+<th>Weight (lbs)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bella</td>
+<td>Labrador Retriever</td>
+<td>65</td>
+</tr>
+<tr class="even">
+<td>Max</td>
+<td>German Shepherd</td>
+<td>75</td>
+</tr>
+<tr class="odd">
+<td>Carter</td>
+<td>Mixed</td>
+<td>68</td>
+</tr>
+<tr class="even">
+<td>Daisy</td>
+<td>Beagle</td>
+<td>22</td>
+</tr>
+<tr class="odd">
+<td>Lucy</td>
+<td>Mixed</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>Rocky</td>
+<td>Bulldog</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td>Molly</td>
+<td>Beagle</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Buddy</td>
+<td>Siberian Husky</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>Sadie</td>
+<td>Mixed</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>Cooper</td>
+<td>Bulldog</td>
+<td>48</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Step 1.</strong> Create a new column header, <code>weight_kg</code>, in cell <code>D1</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figs/sec_0104_fig_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<p><strong>Step 2.</strong> Type the formula that converts Bella’s weight from pounds (lbs) to kilograms (kg).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Type the formula <code>=C2*0.453592</code> in cell <code>D2</code>. Here the formula takes the value from cell <code>C2</code> and multiplies it by 0.453592.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figs/sec_0104_fig_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<p><strong>Step 3.</strong> Press <kbd title="Enter" aria-hidden="true">Enter</kbd><span class="visually-hidden">Enter</span>/<kbd title="Return" aria-hidden="true">Return</kbd><span class="visually-hidden">Return</span> to display the calculated value in cell <code>D2</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figs/sec_0104_fig_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<p><strong>Step 4.</strong> Hover your cursor over the green square in the bottom-right corner of cell D2. Your cursor should turn into a black + symbol. Then double-click. Excel will fast-fill the formula down the column.</p>
+<p><img src="../figs/sec_0104_gif_1.gif" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>1 lb is roughly equal to 0.453592 kg.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
