@@ -74,6 +74,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
+div.callout-convention.callout {
+  border-left-color: orange;
+}
+div.callout-convention.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
+}
+div.callout-convention .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-convention.callout-style-default .callout-icon::before, div.callout-convention.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f071' !important;
+  background-image: none;
+}
 div.callout-example.callout {
   border-left-color: #1B2AFA;
 }
@@ -98,19 +111,6 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f02d' !important;
-  background-image: none;
-}
-div.callout-convention.callout {
-  border-left-color: orange;
-}
-div.callout-convention.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
-}
-div.callout-convention .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-convention.callout-style-default .callout-icon::before, div.callout-convention.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f071' !important;
   background-image: none;
 }
 </style>
@@ -416,7 +416,7 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Answer</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Open the <code>penguins.csv</code> file in Excel. Convert the bill length column from millimeters (mm) to inches (in).</p>
+<p>Open the <code>penguins.csv</code> file in Excel. Insert a new column next to <code>bill_length_mm</code> and covert the bill length values from millimeters (mm) to inches (in). <em>Note:</em> 1 mm is roughly equal to 0.03937 inches.</p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 
