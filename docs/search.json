@@ -184,7 +184,7 @@
     "href": "content/section_0201.html",
     "title": "Section 2.1: Introduction to Quarto Docs",
     "section": "",
-    "text": "1. Opening A New Quarto Document\nTo open a new Quarto document, click the New icon on the top left corner of Position and select New File.... This will prompt another dropdown menu in the top center of Positron. Select Quarto Document.\n\n\n\n\n\n\n\nWarning\n\n\n\nIf you opened a new Quarto document but do not see the template, then you may need to hide the lower panel. You can do this by CtrlCtrl + jj in Windows or commandcommand + jj in macOS.",
+    "text": "1. Opening A New Quarto Document\nTo open a new Quarto document, click the New icon on the top left corner of Position and select New File.... This will prompt another dropdown menu in the top center of Positron. Select Quarto Document.\n\n\n\n\n\n\n\nWarning\n\n\n\nIf you opened a new Quarto document but do not see the template, then you may need to hide the lower panel. You can do this by CtrlCtrl + jj in Windows or commandcommand + jj in macOS.\n\n\n\n\n2. The YAML Header\nAny new Quarto document includes a document header called YAML header. YAML lets us set options to how we want the document to look. The YAML header is enclosed by two sets of --- (lines 1 and 4) and it is within this set of --- we will specify our YAML mappings.\n\n\ndocument.qmd\n\n---\ntitle: \"Untitled\"\nformat: html\n---",
     "crumbs": [
       "Syllabus",
       "Chapter 2: Foundations in R",
