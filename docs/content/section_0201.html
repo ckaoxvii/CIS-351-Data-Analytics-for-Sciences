@@ -109,19 +109,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>
-div.callout-example.callout {
-  border-left-color: #1B2AFA;
-}
-div.callout-example.callout-style-default > .callout-header {
-  background-color: rgba(27, 42, 250, 0.13);
-}
-div.callout-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-example.callout-style-default .callout-icon::before, div.callout-example.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f303' !important;
-  background-image: none;
-}
 div.callout-tidydata.callout {
   border-left-color: #A90533;
 }
@@ -133,6 +120,19 @@ div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-ti
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f02d' !important;
+  background-image: none;
+}
+div.callout-example.callout {
+  border-left-color: #1B2AFA;
+}
+div.callout-example.callout-style-default > .callout-header {
+  background-color: rgba(27, 42, 250, 0.13);
+}
+div.callout-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-example.callout-style-default .callout-icon::before, div.callout-example.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f303' !important;
   background-image: none;
 }
 div.callout-convention.callout {
@@ -391,7 +391,7 @@ Warning
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>If you are using a Mac, make sure that your file name ends with <code>.qmd</code>.</li>
-<li>Only use lowercase letters in file names, and always use <code>_</code> as the word separator.</li>
+<li>Only use lowercase letters in file names, and always use <code>_</code> as the word separator. For example, <code>week_x_lecture_y.qmd</code>, <em>not</em> <code>Week x lecture y.qmd</code></li>
 </ol>
 </div>
 </div>
