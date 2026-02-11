@@ -109,6 +109,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>
+div.callout-example.callout {
+  border-left-color: #1B2AFA;
+}
+div.callout-example.callout-style-default > .callout-header {
+  background-color: rgba(27, 42, 250, 0.13);
+}
+div.callout-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-example.callout-style-default .callout-icon::before, div.callout-example.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f303' !important;
+  background-image: none;
+}
 div.callout-tidydata.callout {
   border-left-color: #A90533;
 }
@@ -133,19 +146,6 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f071' !important;
-  background-image: none;
-}
-div.callout-example.callout {
-  border-left-color: #1B2AFA;
-}
-div.callout-example.callout-style-default > .callout-header {
-  background-color: rgba(27, 42, 250, 0.13);
-}
-div.callout-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-example.callout-style-default .callout-icon::before, div.callout-example.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f303' !important;
   background-image: none;
 }
 </style>
@@ -282,6 +282,8 @@ div.callout-example.callout-style-default .callout-icon::before, div.callout-exa
   <ul>
   <li><a href="#opening-a-new-quarto-document" id="toc-opening-a-new-quarto-document" class="nav-link active" data-scroll-target="#opening-a-new-quarto-document">1. Opening A New Quarto Document</a></li>
   <li><a href="#the-yaml-header" id="toc-the-yaml-header" class="nav-link" data-scroll-target="#the-yaml-header">2. The YAML Header</a></li>
+  <li><a href="#saving-the-quarto-document" id="toc-saving-the-quarto-document" class="nav-link" data-scroll-target="#saving-the-quarto-document">3. Saving the Quarto Document</a></li>
+  <li><a href="#writing-content-in-the-quarto-document" id="toc-writing-content-in-the-quarto-document" class="nav-link" data-scroll-target="#writing-content-in-the-quarto-document">4. Writing Content in the Quarto Document</a></li>
   </ul>
 </nav>
     </div>
@@ -330,13 +332,73 @@ Warning
 <p>Any new Quarto document includes a document header called YAML header. YAML lets us set options to how we want the document to look. The YAML header is enclosed by two sets of <code>---</code> (lines 1 and 4) and it is within this set of <code>---</code> we will specify our YAML mappings.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>document.qmd</strong></pre>
+<pre><strong>Untitled-1.qmd</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="document.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Untitled"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Untitled-1.qmd"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Untitled"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>Rewrite your YAML header so it looks like</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Untitled-1.qmd</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename="Untitled-1.qmd"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"CIS 351: Week X Lecture Y"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Today's Topic"</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="at">    </span><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>YAML Syntax
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Be sure that your code looks exactly like mine. Except for the text inside quotation marks, you must follow the same punctuation and capitalization as shown above.</li>
+<li>There is one indent in front of <code>html:</code> on line 6 and two indents in front of <code>embed-resources: true</code> on line 7.</li>
+</ol>
+</div>
+</div>
+<p>Although this is optional, but it is a good idea to check the <code>Render on Save</code> box so Positron will automatically save the file for you whenever it renders the Quarto document.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figs/sec_0201_fig_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</section>
+<section id="saving-the-quarto-document" class="level3">
+<h3 class="anchored" data-anchor-id="saving-the-quarto-document">3. Saving the Quarto Document</h3>
+<p>To save the current Quarto document, go to the top menu bar and click on <strong>File</strong>, then select <strong>Save As…</strong>. A new window will open where you can to navigate to the appropriate folder (<code>Week X</code>, <code>Homework</code>, etc). If the Quarto document is lecture notes, then use the file name <code>week_x_lecture_y.qmd</code>. If it is a homework assignment, then use the file name <code>assignment_x_last_name.qmd</code>.</p>
+<div class="callout callout-style-default callout-convention callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Convention</span>Convention
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>If you are using a Mac, make sure that your file name ends with <code>.qmd</code>.</li>
+<li>Only use lowercase letters in file names, and always use <code>_</code> as the word separator.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="writing-content-in-the-quarto-document" class="level3">
+<h3 class="anchored" data-anchor-id="writing-content-in-the-quarto-document">4. Writing Content in the Quarto Document</h3>
+<p>For the most part, content in a Quarto document are written in <strong>Quarto markdown</strong> (which is why Quarto documents use the <code>.qmd</code> file extension). Quarto markdown is a derivative of the <strong>markdown</strong> language.</p>
 
 
 </section>
