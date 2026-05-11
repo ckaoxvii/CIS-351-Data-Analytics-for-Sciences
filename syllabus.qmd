@@ -32,8 +32,7 @@ knitr::opts_chunk$set(fig.align = 'center')
 ### Course Details
 
 - [{{< fa calendar-days >}}]{.fa-li} {{< var course.days >}}
-- [{{< fa clock >}}]{.fa-li} Section A: {{< var course.timeA >}}
-- [{{< fa clock >}}]{.fa-li} Section B: {{< var course.timeB >}}
+- [{{< fa clock >}}]{.fa-li} Section A: {{< var course.time >}}
 - [{{< fa location-dot >}}]{.fa-li} {{< var course.location >}}
 :::
 
