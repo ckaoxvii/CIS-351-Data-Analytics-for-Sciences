@@ -10,7 +10,7 @@ course:
   number: 'CIS 351'
   semester: 'Summer A 2026'
   days: 'Asynchronous'
-  timeA: 'Asynchronous'
+  time: 'Asynchronous'
   location: 'Online'
   copyright_year: 2026
 
