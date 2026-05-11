@@ -1,0 +1,61 @@
+---
+title: "Section 2.1: Introduction to Quarto Docs"
+---
+
+### 1. Opening A New Quarto Document
+
+To open a new Quarto document, click the **New** icon on the top left corner of Position and select **New File...**. This will prompt another dropdown menu in the top center of Positron. Select **Quarto Document**.
+
+![](/figs/sec_0201_gif_1.gif)
+
+::: {.callout-warning}
+If you opened a new Quarto document but do not see the template, then you may need to hide the lower panel. You can do this by {{< kbd Ctrl >}} + {{< kbd j >}} in Windows or {{< kbd command >}} + {{< kbd j >}} in macOS.
+:::
+
+### 2. The YAML Header
+
+Any new Quarto document includes a document header called YAML header. YAML lets us set options to how we want the document to look. The YAML header is enclosed by two sets of `---` (lines 1 and 4) and it is within this set of `---` we will specify our YAML mappings.
+
+``` {.yaml filename="Untitled-1.qmd"}
+---
+title: "Untitled"
+format: html
+---
+```
+
+Rewrite your YAML header so it looks like
+
+``` {.yaml filename='Untitled-1.qmd'}
+---
+title: "CIS 351: Week X Lecture Y"
+subtitle: "Today's Topic"
+author: "Your Name"
+format:
+  html:
+    embed-resources: true
+---
+```
+
+::: {.callout-warning}
+## YAML Syntax
+
+1. Be sure that your code looks exactly like mine. Except for the text inside quotation marks, you must follow the same punctuation and capitalization as shown above.
+2. There is one indent in front of `html:` on line 6 and two indents in front of `embed-resources: true` on line 7.
+:::
+
+Although this is optional, but it is a good idea to check the **Render on Save** box so Positron will automatically save the file for you whenever it renders the Quarto document.
+
+![](/figs/sec_0201_fig_1.png){width=50% fig-align="center"}
+
+### 3. Saving the Quarto Document
+
+To save the current Quarto document, go to the top menu bar and click on **File**, then select **Save As...**. A new window will open where you can to navigate to the appropriate folder (`Week X`, `Homework`, etc). If the Quarto document is lecture notes, then use the file name `week_x_lecture_y.qmd`. If it is a homework assignment, then use the file name `assignment_x_last_name.qmd`.
+
+::: convention
+1. If you are using a Mac, make sure that your file name ends with `.qmd`.
+2. Only use lowercase letters in file names, and always use `_` as the word separator. For example, `week_x_lecture_y.qmd`, _not_ `Week x lecture y.qmd`
+:::
+
+### 4. Writing Content in the Quarto Document
+
+For the most part, content in a Quarto document are written in **Quarto markdown** (which is why Quarto documents use the `.qmd` file extension). Quarto markdown is a derivative of the **markdown** language. 

@@ -34,11 +34,14 @@ website:
       search: false
       background: light
       contents:
-        - section: 'Chapter 1: Foundations'
+        - section: 'Chapter 1: Foundations in Excel'
           contents:
             - file: content/section_0102.qmd
             - file: content/section_0103.qmd
             - file: content/section_0104.qmd
+        - section: 'Chapter 2: Foundations in R'
+          contents:
+            - file: content/section_0201.qmd
         - section: 'Appendices'
           contents:
             - text: "Appendix A"
@@ -57,6 +60,7 @@ format:
       - html/custom.scss
     link-external-newwindow: true
     link-external-icon: true 
+    code-line-numbers: true
 
 custom-callout:
   tidydata:
