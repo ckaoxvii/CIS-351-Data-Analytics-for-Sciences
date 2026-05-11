@@ -8,14 +8,13 @@ instructor:
 
 course:
   number: 'CIS 351'
-  semester: 'Spring 2026'
-  days: 'MWF'
-  timeA: '8 am--8:50 am'
-  timeB: '12 pm--12:50 pm'
-  location: 'Proctor Library L304'
+  semester: 'Summer A 2026'
+  days: 'Asynchronous'
+  timeA: 'Asynchronous'
+  location: 'Online'
   copyright_year: 2026
 
 college: 
   name: "Flagler College"
 
-office_hours: 'TR, 10 am--12 pm'
+office_hours: 'TBA'
