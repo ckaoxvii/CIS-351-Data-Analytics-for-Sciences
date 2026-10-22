@@ -1,4 +1,6 @@
 project:
+  h
+
   type: website
   output-dir: docs
   render:
@@ -25,9 +27,9 @@ website:
   navbar:
     pinned: true
     background: "#A90533"
-    right: 
-      - syllabus.qmd
-      - schedule.qmd 
+    # right: 
+    #   - syllabus.qmd
+    #   - schedule.qmd 
       
   sidebar:
       style: 'docked'
