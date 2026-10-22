@@ -1,7 +1,4 @@
 project:
-  h
-
-  type: website
   output-dir: docs
   render:
     - "*.qmd"
