@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Section 1.1: Introduction to File Management – Data Analytics for Sciences</title>
+<title>Understanding Files, Folders, and File Types – Data Analytics for Sciences</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,19 +111,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-tidydata.callout {
-  border-left-color: #A90533;
-}
-div.callout-tidydata.callout-style-default > .callout-header {
-  background-color: rgba(169, 5, 51, 0.13);
-}
-div.callout-tidydata .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-tidydata.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f02d' !important;
-  background-image: none;
-}
 div.callout-example.callout {
   border-left-color: #1B2AFA;
 }
@@ -100,6 +122,19 @@ div.callout-example.callout-style-default .callout-icon::before, div.callout-exa
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f303' !important;
+  background-image: none;
+}
+div.callout-tidydata.callout {
+  border-left-color: #A90533;
+}
+div.callout-tidydata.callout-style-default > .callout-header {
+  background-color: rgba(169, 5, 51, 0.13);
+}
+div.callout-tidydata .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-tidydata.callout-style-default .callout-icon::before, div.callout-tidydata.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f02d' !important;
   background-image: none;
 }
 div.callout-convention.callout {
@@ -141,7 +176,7 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/section_0001.html">Chapter 0: Understanding Files, Folders, and File Types</a></li><li class="breadcrumb-item"><a href="../content/section_0001.html">Section 1.1: Introduction to File Management</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/section_0001.html">Chapter 0: Understanding Files, Folders, and File Types</a></li><li class="breadcrumb-item"><a href="../content/section_0001.html">Understanding Files, Folders, and File Types</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -165,7 +200,7 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/section_0001.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Section 1.1: Introduction to File Management</span></a>
+ <span class="menu-text">Understanding Files, Folders, and File Types</span></a>
   </div>
 </li>
       </ul>
@@ -244,15 +279,52 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#files-and-folders" id="toc-files-and-folders" class="nav-link" data-scroll-target="#files-and-folders">1. Files and Folders</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-file" id="toc-what-is-a-file" class="nav-link" data-scroll-target="#what-is-a-file">What is a file?</a></li>
+  <li><a href="#what-is-a-folder" id="toc-what-is-a-folder" class="nav-link" data-scroll-target="#what-is-a-folder">What is a folder?</a></li>
+  <li><a href="#why-organization-matters" id="toc-why-organization-matters" class="nav-link" data-scroll-target="#why-organization-matters">Why organization matters</a></li>
+  </ul></li>
+  <li><a href="#finding-files-in-windows-and-macos" id="toc-finding-files-in-windows-and-macos" class="nav-link" data-scroll-target="#finding-files-in-windows-and-macos">2. Finding Files in Windows and macOS</a>
+  <ul class="collapse">
+  <li><a href="#a-note-about-paths" id="toc-a-note-about-paths" class="nav-link" data-scroll-target="#a-note-about-paths">A note about paths</a></li>
+  <li><a href="#viewing-the-path-in-macos-finder" id="toc-viewing-the-path-in-macos-finder" class="nav-link" data-scroll-target="#viewing-the-path-in-macos-finder">Viewing the path in macOS Finder</a></li>
+  <li><a href="#common-folders" id="toc-common-folders" class="nav-link" data-scroll-target="#common-folders">Common folders</a></li>
+  </ul></li>
+  <li><a href="#file-names-and-file-extensions" id="toc-file-names-and-file-extensions" class="nav-link" data-scroll-target="#file-names-and-file-extensions">3. File Names and File Extensions</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-filename" id="toc-what-is-a-filename" class="nav-link" data-scroll-target="#what-is-a-filename">What is a filename?</a></li>
+  <li><a href="#what-is-a-file-extension" id="toc-what-is-a-file-extension" class="nav-link" data-scroll-target="#what-is-a-file-extension">What is a file extension?</a></li>
+  <li><a href="#file-extensions-and-applications" id="toc-file-extensions-and-applications" class="nav-link" data-scroll-target="#file-extensions-and-applications">File extensions and applications</a></li>
+  </ul></li>
+  <li><a href="#showing-file-extensions" id="toc-showing-file-extensions" class="nav-link" data-scroll-target="#showing-file-extensions">4. Showing File Extensions</a>
+  <ul class="collapse">
+  <li><a href="#important-caution-when-renaming-files" id="toc-important-caution-when-renaming-files" class="nav-link" data-scroll-target="#important-caution-when-renaming-files">Important caution when renaming files</a></li>
+  </ul></li>
+  <li><a href="#creating-and-managing-folders" id="toc-creating-and-managing-folders" class="nav-link" data-scroll-target="#creating-and-managing-folders">5. Creating and Managing Folders</a>
+  <ul class="collapse">
+  <li><a href="#moving-and-copying-files" id="toc-moving-and-copying-files" class="nav-link" data-scroll-target="#moving-and-copying-files">Moving and copying files</a></li>
+  <li><a href="#keep-project-files-together" id="toc-keep-project-files-together" class="nav-link" data-scroll-target="#keep-project-files-together">Keep project files together</a></li>
+  </ul></li>
+  <li><a href="#practical-file-management-habits" id="toc-practical-file-management-habits" class="nav-link" data-scroll-target="#practical-file-management-habits">6. Practical File-Management Habits</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#review-questions" id="toc-review-questions" class="nav-link" data-scroll-target="#review-questions">Review Questions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/section_0001.html">Chapter 0: Understanding Files, Folders, and File Types</a></li><li class="breadcrumb-item"><a href="../content/section_0001.html">Section 1.1: Introduction to File Management</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/section_0001.html">Chapter 0: Understanding Files, Folders, and File Types</a></li><li class="breadcrumb-item"><a href="../content/section_0001.html">Understanding Files, Folders, and File Types</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Section 1.1: Introduction to File Management</h1>
+<h1 class="title">Understanding Files, Folders, and File Types</h1>
+<p class="subtitle lead">Working with Files in Windows and macOS</p>
 </div>
 
 
@@ -269,10 +341,321 @@ div.callout-convention.callout-style-default .callout-icon::before, div.callout-
 </header>
 
 
-<p>A sound file management system and work flow are part of best practices in modern data science. Throughout this course, you will create, download, open, modify, and save many different types of files. Keeping these files organized will make it easier for you and your collaborators to locate your data. It also ensures your data analyses remain reproducible.</p>
-<p>In this section, we will introduce basic file management terminology and examine how <em>files</em> and <em>directories</em> (folders) are organized in Windows and macOS operating systems.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>A sound file management system is an important part of modern data science. Throughout this course, you will create, download, open, modify, and save many different types of files. Keeping these files organized makes it easier for you and your collaborators to locate data, understand your workflow, and reproduce your analyses.</p>
+<p>In this chapter, we will introduce the basic terminology of file management and examine how files and folders are organized in Windows and macOS. We will also discuss file paths, file extensions, and a few practical conventions for keeping your work organized.</p>
+</section>
+<section id="files-and-folders" class="level2">
+<h2 class="anchored" data-anchor-id="files-and-folders">1. Files and Folders</h2>
+<section id="what-is-a-file" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-file">What is a file?</h3>
+<p>A <strong>file</strong> is a named collection of information stored on a computer. A file might contain text, a spreadsheet, a picture, a program, or data used in an analysis.</p>
+<p>Examples include:</p>
+<ul>
+<li><code>lecture_notes.qmd</code> — a Quarto document.</li>
+<li><code>penguins.csv</code> — a comma-separated values data file.</li>
+<li><code>results.xlsx</code> — an Excel workbook.</li>
+<li><code>plot.png</code> — an image.</li>
+<li><code>analysis.R</code> — an R script.</li>
+</ul>
+<p>The filename helps you identify the file’s purpose. In many cases, the filename also includes a <strong>file extension</strong>, such as <code>.csv</code> or <code>.xlsx</code>, which indicates the file type.</p>
+</section>
+<section id="what-is-a-folder" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-folder">What is a folder?</h3>
+<p>A <strong>folder</strong> is a container used to organize files and other folders. A folder inside another folder is often called a <strong>subfolder</strong>. Folders can be arranged in a hierarchy, allowing related files to be grouped together.</p>
+<p>For example, a course might use a structure like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1" aria-label="1"></a>CIS_351/</span>
+<span id="cb1-2"><a href="#cb1-2" aria-label="2"></a>├── Week_01/</span>
+<span id="cb1-3"><a href="#cb1-3" aria-label="3"></a>│   ├── week_01_lecture.qmd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-label="4"></a>│   └── notes.pdf</span>
+<span id="cb1-5"><a href="#cb1-5" aria-label="5"></a>├── Week_02/</span>
+<span id="cb1-6"><a href="#cb1-6" aria-label="6"></a>│   ├── penguins.csv</span>
+<span id="cb1-7"><a href="#cb1-7" aria-label="7"></a>│   └── week_02_lecture.qmd</span>
+<span id="cb1-8"><a href="#cb1-8" aria-label="8"></a>└── Homework/</span>
+<span id="cb1-9"><a href="#cb1-9" aria-label="9"></a>    └── assignment_01.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is a text representation of a folder structure. The exact appearance of folders and files differs between operating systems, but the basic idea is the same: folders help you organize related files.</p>
+</section>
+<section id="why-organization-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-organization-matters">Why organization matters</h3>
+<p>A consistent folder structure helps you:</p>
+<ul>
+<li>Find files again after saving or downloading them.</li>
+<li>Keep raw data separate from cleaned data, code, and results.</li>
+<li>Avoid accidentally editing or overwriting the wrong file.</li>
+<li>Share a project with classmates or collaborators.</li>
+<li>Make your analysis easier to understand and reproduce.</li>
+</ul>
+<p>For data analysis, it is especially helpful to keep all files for a project in one main project folder, with clearly named subfolders when needed.</p>
+</section>
+</section>
+<section id="finding-files-in-windows-and-macos" class="level2">
+<h2 class="anchored" data-anchor-id="finding-files-in-windows-and-macos">2. Finding Files in Windows and macOS</h2>
+<p>Windows and macOS use different names for their main file-management applications.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>In Windows, use <strong>File Explorer</strong> to browse folders, open files, copy or move items, and create new folders. You can open File Explorer from the taskbar or by searching for “File Explorer” from the Start menu.</p>
+<p>A Windows computer commonly has drives identified by letters. The main drive is often <code>C:</code>. A path might look like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1" aria-label="1"></a>C:\Users\Alex\Documents\CIS_351\Week_01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The backslash (<code>\</code>) separates the folders in a Windows path.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>In macOS, use <strong>Finder</strong> to browse folders, open files, copy or move items, and create new folders. Finder is available from the Dock.</p>
+<p>The main storage volume is commonly accessed through the startup disk, and user files are often stored in the user’s home folder. A path might look like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1" aria-label="1"></a>/Users/alex/Documents/CIS_351/Week_01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The forward slash (<code>/</code>) separates folders in a macOS path.</p>
+</div>
+</div>
+</div>
+<section id="a-note-about-paths" class="level3">
+<h3 class="anchored" data-anchor-id="a-note-about-paths">A note about paths</h3>
+<p>A <strong>file path</strong> identifies where a file or folder is located. It is similar to an address: it tells the computer how to reach a particular item within the folder hierarchy.</p>
+<p>For example, these paths refer to a folder named <code>Week_01</code>, but they use the conventions of different operating systems:</p>
+<ul>
+<li>Windows: <code>C:\Users\Alex\Documents\CIS_351\Week_01</code></li>
+<li>macOS: <code>/Users/alex/Documents/CIS_351/Week_01</code></li>
+</ul>
+<p>The paths above are examples; the actual username and folder locations on your computer may differ.</p>
+</section>
+<section id="viewing-the-path-in-macos-finder" class="level3">
+<h3 class="anchored" data-anchor-id="viewing-the-path-in-macos-finder">Viewing the path in macOS Finder</h3>
+<p>Finder does not always show the full path to the current folder by default. To display the Path Bar:</p>
+<ol type="1">
+<li>Open a Finder window.</li>
+<li>Click <strong>View</strong> in the menu bar.</li>
+<li>Select <strong>Show Path Bar</strong>.</li>
+</ol>
+<p>The Path Bar appears at the bottom of the Finder window and shows the folders leading to the current location. This can help you confirm where a file is stored.</p>
+</section>
+<section id="common-folders" class="level3">
+<h3 class="anchored" data-anchor-id="common-folders">Common folders</h3>
+<p>You will often encounter folders such as:</p>
+<ul>
+<li><strong>Desktop</strong> — items placed on the desktop.</li>
+<li><strong>Documents</strong> — a common location for documents and personal projects.</li>
+<li><strong>Downloads</strong> — files downloaded from a browser or other application.</li>
+<li><strong>Pictures</strong> — images and photographs.</li>
+</ul>
+<p>Windows and macOS may provide additional folders and cloud-storage locations. Do not assume that every computer stores files in exactly the same place. When saving work for this course, choose the appropriate course or project folder and check the location before saving.</p>
+</section>
+</section>
+<section id="file-names-and-file-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="file-names-and-file-extensions">3. File Names and File Extensions</h2>
+<section id="what-is-a-filename" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-filename">What is a filename?</h3>
+<p>A <strong>filename</strong> is the name used to identify a file. For example, in <code>week_01_lecture.qmd</code>, the filename is <code>week_01_lecture.qmd</code>.</p>
+<p>Good filenames describe the contents of a file and make it easier to distinguish one version or assignment from another.</p>
+<p>For this course, use these conventions unless an assignment specifies otherwise:</p>
+<ol type="1">
+<li>Use lowercase letters in filenames.</li>
+<li>Use underscores (<code>_</code>) instead of spaces to separate words.</li>
+<li>Choose names that describe the file’s contents.</li>
+<li>Include the appropriate extension.</li>
+<li>Avoid vague names such as <code>stuff</code>, <code>newfile</code>, or <code>final_final</code>.</li>
+</ol>
+<p>For example, prefer <code>week_02_lecture.qmd</code> over <code>Week 2 Lecture final.qmd</code>.</p>
+</section>
+<section id="what-is-a-file-extension" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-file-extension">What is a file extension?</h3>
+<p>A <strong>file extension</strong> is the suffix at the end of a filename, usually consisting of a period followed by letters. It often indicates the file’s format or the application commonly used to open it.</p>
+<p>Examples:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Extension</th>
+<th>Common file type</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>.txt</code></td>
+<td>Plain-text file</td>
+<td>Notes or unformatted text</td>
+</tr>
+<tr class="even">
+<td><code>.pdf</code></td>
+<td>Portable Document Format</td>
+<td>Documents designed to preserve layout</td>
+</tr>
+<tr class="odd">
+<td><code>.docx</code></td>
+<td>Microsoft Word document</td>
+<td>Word-processing documents</td>
+</tr>
+<tr class="even">
+<td><code>.xlsx</code></td>
+<td>Microsoft Excel workbook</td>
+<td>Spreadsheets with worksheets and formulas</td>
+</tr>
+<tr class="odd">
+<td><code>.csv</code></td>
+<td>Comma-separated values</td>
+<td>Tabular data stored as text</td>
+</tr>
+<tr class="even">
+<td><code>.png</code></td>
+<td>PNG image</td>
+<td>Screenshots, figures, and other images</td>
+</tr>
+<tr class="odd">
+<td><code>.jpg</code> or <code>.jpeg</code></td>
+<td>JPEG image</td>
+<td>Photographs and other compressed images</td>
+</tr>
+<tr class="even">
+<td><code>.html</code></td>
+<td>HTML document</td>
+<td>Web pages</td>
+</tr>
+<tr class="odd">
+<td><code>.R</code></td>
+<td>R script</td>
+<td>Code written in R</td>
+</tr>
+<tr class="even">
+<td><code>.qmd</code></td>
+<td>Quarto Markdown document</td>
+<td>Source document that can be rendered to formats such as HTML or PDF</td>
+</tr>
+</tbody>
+</table>
+<p>An extension is a useful clue, but it does not guarantee that a file is valid or safe. Also, changing a filename’s extension does not convert the file to a different format. For example, renaming <code>data.csv</code> to <code>data.xlsx</code> does not turn a CSV file into an Excel workbook.</p>
+</section>
+<section id="file-extensions-and-applications" class="level3">
+<h3 class="anchored" data-anchor-id="file-extensions-and-applications">File extensions and applications</h3>
+<p>Different applications work with different file formats. For example:</p>
+<ul>
+<li>You can use Excel to open an <code>.xlsx</code> workbook.</li>
+<li>You can open a <code>.csv</code> file in Excel or a text editor.</li>
+<li>You can edit an <code>.R</code> file in a code editor such as Positron or RStudio.</li>
+<li>You can write a <code>.qmd</code> file in a Quarto-compatible editor and render it into an output format.</li>
+</ul>
+<p>Some file types can be opened by more than one application. Your computer’s default application determines which app opens a file when you double-click it. You can usually choose another application from the file’s context menu.</p>
+</section>
+</section>
+<section id="showing-file-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="showing-file-extensions">4. Showing File Extensions</h2>
+<p>Some computers hide familiar file extensions in their file-management windows. As a result, you might see <code>penguins</code> rather than <code>penguins.csv</code>. Showing extensions makes it easier to identify file types and confirm that files have the expected names.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>In current versions of Windows 11:</p>
+<ol type="1">
+<li>Open <strong>File Explorer</strong>.</li>
+<li>Select <strong>View</strong>.</li>
+<li>Select <strong>Show</strong>.</li>
+<li>Turn on <strong>File name extensions</strong>.</li>
+</ol>
+<p>The full filenames should now display extensions such as <code>.csv</code>, <code>.xlsx</code>, and <code>.qmd</code>. The precise menu layout may vary by Windows version.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>To show extensions in Finder:</p>
+<ol type="1">
+<li>Open <strong>Finder</strong>.</li>
+<li>In the menu bar, select <strong>Finder</strong> and then <strong>Settings</strong> (called <strong>Preferences</strong> in some older macOS versions).</li>
+<li>Open the <strong>Advanced</strong> section.</li>
+<li>Enable <strong>Show all filename extensions</strong>.</li>
+</ol>
+<p>Finder should now display extensions for files when they are available. The precise wording may vary by macOS version.</p>
+</div>
+</div>
+</div>
+<section id="important-caution-when-renaming-files" class="level3">
+<h3 class="anchored" data-anchor-id="important-caution-when-renaming-files">Important caution when renaming files</h3>
+<p>When renaming a file, be careful not to remove or change its extension unintentionally. If you change <code>penguins.csv</code> to <code>penguins.txt</code>, the file’s contents may still be CSV data even though its name now suggests a text file. Some applications may no longer recognize the file as expected.</p>
+<p>To convert a file, use the appropriate application’s <strong>Save As</strong> or <strong>Export</strong> function rather than simply changing the extension.</p>
+</section>
+</section>
+<section id="creating-and-managing-folders" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-managing-folders">5. Creating and Managing Folders</h2>
+<p>A simple folder structure can make course work easier to manage. For example, you might keep each week’s lecture materials and data in a separate folder, or use a project folder with subfolders for data, scripts, and outputs.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">macOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>In File Explorer:</p>
+<ol type="1">
+<li>Navigate to the location where you want the folder.</li>
+<li>Right-click an empty area of the folder window.</li>
+<li>Select <strong>New</strong> and then <strong>Folder</strong>.</li>
+<li>Type a name and press <strong>Enter</strong>.</li>
+</ol>
+<p>You can also use the <strong>New</strong> button in File Explorer when it is available.</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>In Finder:</p>
+<ol type="1">
+<li>Navigate to the location where you want the folder.</li>
+<li>Open the <strong>File</strong> menu and select <strong>New Folder</strong>, or use the Finder’s available New Folder command.</li>
+<li>Type a name and press <strong>Return</strong>.</li>
+</ol>
+<p>You can also create a folder from the context menu in many Finder views.</p>
+</div>
+</div>
+</div>
+<section id="moving-and-copying-files" class="level3">
+<h3 class="anchored" data-anchor-id="moving-and-copying-files">Moving and copying files</h3>
+<p><strong>Copying</strong> creates another copy of a file or folder, while <strong>moving</strong> changes its location. Both operations are available through the file manager’s menus and keyboard shortcuts.</p>
+<p>Before moving or renaming files used in a data analysis project, consider whether another file refers to their original locations. For example, a script that reads <code>data/penguins.csv</code> may stop working if you move the CSV file without updating the script or its path.</p>
+</section>
+<section id="keep-project-files-together" class="level3">
+<h3 class="anchored" data-anchor-id="keep-project-files-together">Keep project files together</h3>
+<p>For reproducible work, it is often best to keep related data, code, and documentation in a common project folder. A project might look like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1" aria-label="1"></a>penguin_analysis/</span>
+<span id="cb4-2"><a href="#cb4-2" aria-label="2"></a>├── data/</span>
+<span id="cb4-3"><a href="#cb4-3" aria-label="3"></a>│   └── penguins.csv</span>
+<span id="cb4-4"><a href="#cb4-4" aria-label="4"></a>├── scripts/</span>
+<span id="cb4-5"><a href="#cb4-5" aria-label="5"></a>│   └── clean_data.R</span>
+<span id="cb4-6"><a href="#cb4-6" aria-label="6"></a>├── reports/</span>
+<span id="cb4-7"><a href="#cb4-7" aria-label="7"></a>│   └── analysis.qmd</span>
+<span id="cb4-8"><a href="#cb4-8" aria-label="8"></a>└── output/</span>
+<span id="cb4-9"><a href="#cb4-9" aria-label="9"></a>    └── summary_table.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is only an example. Use a structure that fits the project and any instructions provided for the course. Avoid creating many layers of folders unless they make the project easier to navigate.</p>
+</section>
+</section>
+<section id="practical-file-management-habits" class="level2">
+<h2 class="anchored" data-anchor-id="practical-file-management-habits">6. Practical File-Management Habits</h2>
+<p>Good file management is not just about knowing where files are stored. It also involves developing consistent habits.</p>
+<ul>
+<li><strong>Check where you are saving.</strong> Before saving or downloading a file, confirm the destination folder.</li>
+<li><strong>Use descriptive names.</strong> A name such as <code>penguin_bill_lengths.csv</code> is more informative than <code>data2.csv</code>.</li>
+<li><strong>Keep raw data unchanged.</strong> When possible, preserve the original data and save cleaned or modified versions separately.</li>
+<li><strong>Separate inputs from outputs.</strong> Keep source data, scripts, reports, and generated results organized.</li>
+<li><strong>Use consistent naming conventions.</strong> Lowercase filenames and underscores can make names easier to work with in code.</li>
+<li><strong>Be careful with extensions.</strong> Do not assume that renaming a file changes its format.</li>
+<li><strong>Check paths when something goes wrong.</strong> If an application cannot find a file, verify the folder location and filename.</li>
+</ul>
+<p>These habits help prevent common errors and make it easier for other people to follow your work.</p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Files store information, while folders organize files and other folders into a hierarchy. Windows uses File Explorer and commonly represents paths with drive letters and backslashes; macOS uses Finder and commonly represents paths with forward slashes. A file path identifies an item’s location, and a file extension often indicates its format or the applications that can open it.</p>
+<p>For this course, use descriptive filenames, lowercase letters, and underscores as word separators. Keep related project files organized, check where you save them, and remember that changing a file’s extension does not convert its contents to another format.</p>
+</section>
+<section id="review-questions" class="level2">
+<h2 class="anchored" data-anchor-id="review-questions">Review Questions</h2>
+<ol type="1">
+<li>What is the difference between a file and a folder?</li>
+<li>What information does a file path provide?</li>
+<li>Which application do you use to browse files in Windows? Which one do you use in macOS?</li>
+<li>What does a file extension usually tell you? Give two examples.</li>
+<li>Why does changing <code>data.csv</code> to <code>data.xlsx</code> not convert the file into an Excel workbook?</li>
+<li>How can you display file extensions in Windows and macOS?</li>
+<li>Give two file-naming conventions that can make data-analysis projects easier to manage.</li>
+<li>Why is it useful to keep related data files, scripts, and reports in a common project folder?</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
