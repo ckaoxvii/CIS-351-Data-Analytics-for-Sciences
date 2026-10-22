@@ -36,6 +36,7 @@ website:
       contents:
         - section: 'Chapter 1: Foundations in Excel'
           contents:
+            - file: content/section_0101.qmd
             - file: content/section_0102.qmd
             - file: content/section_0103.qmd
             - file: content/section_0104.qmd
