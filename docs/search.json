@@ -79,34 +79,34 @@
   {
     "objectID": "content/section_0103.html",
     "href": "content/section_0103.html",
-    "title": "Section 1.4: Using Formulas in Excel",
+    "title": "Section 1.3: Using Formulas in Excel",
     "section": "",
     "text": "We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.",
     "crumbs": [
       "Chapter 1: Foundations in Excel",
-      "Section 1.4: Using Formulas in Excel"
+      "Section 1.3: Using Formulas in Excel"
     ]
   },
   {
     "objectID": "content/section_0103.html#footnotes",
     "href": "content/section_0103.html#footnotes",
-    "title": "Section 1.4: Using Formulas in Excel",
+    "title": "Section 1.3: Using Formulas in Excel",
     "section": "Footnotes",
     "text": "Footnotes\n\n\n1 lb is roughly equal to 0.453592 kg.↩︎",
     "crumbs": [
       "Chapter 1: Foundations in Excel",
-      "Section 1.4: Using Formulas in Excel"
+      "Section 1.3: Using Formulas in Excel"
     ]
   },
   {
     "objectID": "content/section_0101.html",
     "href": "content/section_0101.html",
-    "title": "Section 1.2: Introduction to Excel",
+    "title": "Section 1.1: Introduction to Excel",
     "section": "",
     "text": "Let us now open the Excel app.\n\nWindowsmacOS\n\n\nTo open Excel in Windows, type in “Excel” in the Windows search bar and click on the Excel icon to open the app. Alternatively, you can press the Windows key to bring up the search bar in the Start Menu.\n\n\n\n\n\n\n\nTo open Excel in macOS, open the Spotlight search bar by pressing Cmd + Space, then type in “Excel”.\n\n\n\n\n\n\n\n\nExcel will first open to its template window. To begin data entry, double click on Blank Workbook.\n\n\n\n\n\nThere are two main parts to each Excel spreadsheet: the sheets and the Ribbon.\n\nThe sheet is the area where you enter and view data, including values and formulas.\nThe Ribbon provides shortcuts to Excel commands and tools, making it easier to format, organize, and analyze your spreadsheet.\n\n\n\nThe Ribbon\nThe row above the Ribbon are the Tabs, it is a menu of different groups of commands. An icon in the Ribbon is called a command. Sometimes a command icon has a dropdown menu which displays more commands.\n\n\n\nThe Sheet\nA sheet is a spreadsheet made up of columns and rows. Each individual rectangle within the sheet is called a cell. Cells are where you enter data, such as values and formulas.\n\nColumns are labeled using the English alphabet: A, B, C, etc.\nRows are labeled with numbers: 1, 2, 3, etc.\n\nEach cell is identified by its column letter and row number, such as A1 or C5. When a cell is highlighted, its reference value is displayed in the Name Box.\n\nEach sheet is labeled by the sheet tab at the bottom of each sheet.\n\nTo rename a sheet, right click (or click with two fingers) to bring up the context menu and select Rename.\n\n\n\nWorking with Multiple Sheets\nIt is possible to work with multiple datasets by saving them on separate sheets within the same Excel workbook. There are several ways to add a new sheet in the current workbook. The easiest method is to click on the “+” symbol to the right of the sheet name tab.",
     "crumbs": [
       "Chapter 1: Foundations in Excel",
-      "Section 1.2: Introduction to Excel"
+      "Section 1.1: Introduction to Excel"
     ]
   },
   {
@@ -141,144 +141,144 @@
   {
     "objectID": "content/section_0001.html",
     "href": "content/section_0001.html",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "",
     "text": "A sound file management system is an important part of modern data science. Throughout this course, you will create, download, open, modify, and save many different types of files. Keeping these files organized makes it easier for you and your collaborators to locate data, understand your workflow, and reproduce your analyses.\nIn this chapter, we will introduce the basic terminology of file management and examine how files and folders are organized in Windows and macOS. We will also discuss file paths, file extensions, and a few practical conventions for keeping your work organized.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#introduction",
     "href": "content/section_0001.html#introduction",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "",
     "text": "A sound file management system is an important part of modern data science. Throughout this course, you will create, download, open, modify, and save many different types of files. Keeping these files organized makes it easier for you and your collaborators to locate data, understand your workflow, and reproduce your analyses.\nIn this chapter, we will introduce the basic terminology of file management and examine how files and folders are organized in Windows and macOS. We will also discuss file paths, file extensions, and a few practical conventions for keeping your work organized.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#files-and-folders",
     "href": "content/section_0001.html#files-and-folders",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "1. Files and Folders",
     "text": "1. Files and Folders\n\nWhat is a file?\nA file is a named collection of information stored on a computer. A file might contain text, a spreadsheet, a picture, a program, or data used in an analysis.\nExamples include:\n\nlecture_notes.qmd — a Quarto document.\npenguins.csv — a comma-separated values data file.\nresults.xlsx — an Excel workbook.\nplot.png — an image.\nanalysis.R — an R script.\n\nThe filename helps you identify the file’s purpose. In many cases, the filename also includes a file extension, such as .csv or .xlsx, which indicates the file type.\n\n\nWhat is a folder?\nA folder is a container used to organize files and other folders. A folder inside another folder is often called a subfolder. Folders can be arranged in a hierarchy, allowing related files to be grouped together.\nFor example, a course might use a structure like this:\nCIS_351/\n├── Week_01/\n│   ├── week_01_lecture.qmd\n│   └── notes.pdf\n├── Week_02/\n│   ├── penguins.csv\n│   └── week_02_lecture.qmd\n└── Homework/\n    └── assignment_01.qmd\nThis is a text representation of a folder structure. The exact appearance of folders and files differs between operating systems, but the basic idea is the same: folders help you organize related files.\n\n\nWhy organization matters\nA consistent folder structure helps you:\n\nFind files again after saving or downloading them.\nKeep raw data separate from cleaned data, code, and results.\nAvoid accidentally editing or overwriting the wrong file.\nShare a project with classmates or collaborators.\nMake your analysis easier to understand and reproduce.\n\nFor data analysis, it is especially helpful to keep all files for a project in one main project folder, with clearly named subfolders when needed.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#finding-files-in-windows-and-macos",
     "href": "content/section_0001.html#finding-files-in-windows-and-macos",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "2. Finding Files in Windows and macOS",
     "text": "2. Finding Files in Windows and macOS\nWindows and macOS use different names for their main file-management applications.\n\nWindowsmacOS\n\n\nIn Windows, use File Explorer to browse folders, open files, copy or move items, and create new folders. You can open File Explorer from the taskbar or by searching for “File Explorer” from the Start menu.\nA Windows computer commonly has drives identified by letters. The main drive is often C:. A path might look like this:\nC:\\Users\\Alex\\Documents\\CIS_351\\Week_01\nThe backslash (\\) separates the folders in a Windows path.\n\n\nIn macOS, use Finder to browse folders, open files, copy or move items, and create new folders. Finder is available from the Dock.\nThe main storage volume is commonly accessed through the startup disk, and user files are often stored in the user’s home folder. A path might look like this:\n/Users/alex/Documents/CIS_351/Week_01\nThe forward slash (/) separates folders in a macOS path.\n\n\n\n\nA note about paths\nA file path identifies where a file or folder is located. It is similar to an address: it tells the computer how to reach a particular item within the folder hierarchy.\nFor example, these paths refer to a folder named Week_01, but they use the conventions of different operating systems:\n\nWindows: C:\\Users\\Alex\\Documents\\CIS_351\\Week_01\nmacOS: /Users/alex/Documents/CIS_351/Week_01\n\nThe paths above are examples; the actual username and folder locations on your computer may differ.\n\n\nViewing the path in macOS Finder\nFinder does not always show the full path to the current folder by default. To display the Path Bar:\n\nOpen a Finder window.\nClick View in the menu bar.\nSelect Show Path Bar.\n\nThe Path Bar appears at the bottom of the Finder window and shows the folders leading to the current location. This can help you confirm where a file is stored.\n\n\nCommon folders\nYou will often encounter folders such as:\n\nDesktop — items placed on the desktop.\nDocuments — a common location for documents and personal projects.\nDownloads — files downloaded from a browser or other application.\nPictures — images and photographs.\n\nWindows and macOS may provide additional folders and cloud-storage locations. Do not assume that every computer stores files in exactly the same place. When saving work for this course, choose the appropriate course or project folder and check the location before saving.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#file-names-and-file-extensions",
     "href": "content/section_0001.html#file-names-and-file-extensions",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "3. File Names and File Extensions",
     "text": "3. File Names and File Extensions\n\nWhat is a filename?\nA filename is the name used to identify a file. For example, in week_01_lecture.qmd, the filename is week_01_lecture.qmd.\nGood filenames describe the contents of a file and make it easier to distinguish one version or assignment from another.\nFor this course, use these conventions unless an assignment specifies otherwise:\n\nUse lowercase letters in filenames.\nUse underscores (_) instead of spaces to separate words.\nChoose names that describe the file’s contents.\nInclude the appropriate extension.\nAvoid vague names such as stuff, newfile, or final_final.\n\nFor example, prefer week_02_lecture.qmd over Week 2 Lecture final.qmd.\n\n\nWhat is a file extension?\nA file extension is the suffix at the end of a filename, usually consisting of a period followed by letters. It often indicates the file’s format or the application commonly used to open it.\nExamples:\n\n\n\n\n\n\n\n\nExtension\nCommon file type\nTypical use\n\n\n\n\n.txt\nPlain-text file\nNotes or unformatted text\n\n\n.pdf\nPortable Document Format\nDocuments designed to preserve layout\n\n\n.docx\nMicrosoft Word document\nWord-processing documents\n\n\n.xlsx\nMicrosoft Excel workbook\nSpreadsheets with worksheets and formulas\n\n\n.csv\nComma-separated values\nTabular data stored as text\n\n\n.png\nPNG image\nScreenshots, figures, and other images\n\n\n.jpg or .jpeg\nJPEG image\nPhotographs and other compressed images\n\n\n.html\nHTML document\nWeb pages\n\n\n.R\nR script\nCode written in R\n\n\n.qmd\nQuarto Markdown document\nSource document that can be rendered to formats such as HTML or PDF\n\n\n\nAn extension is a useful clue, but it does not guarantee that a file is valid or safe. Also, changing a filename’s extension does not convert the file to a different format. For example, renaming data.csv to data.xlsx does not turn a CSV file into an Excel workbook.\n\n\nFile extensions and applications\nDifferent applications work with different file formats. For example:\n\nYou can use Excel to open an .xlsx workbook.\nYou can open a .csv file in Excel or a text editor.\nYou can edit an .R file in a code editor such as Positron or RStudio.\nYou can write a .qmd file in a Quarto-compatible editor and render it into an output format.\n\nSome file types can be opened by more than one application. Your computer’s default application determines which app opens a file when you double-click it. You can usually choose another application from the file’s context menu.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#showing-file-extensions",
     "href": "content/section_0001.html#showing-file-extensions",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "4. Showing File Extensions",
     "text": "4. Showing File Extensions\nSome computers hide familiar file extensions in their file-management windows. As a result, you might see penguins rather than penguins.csv. Showing extensions makes it easier to identify file types and confirm that files have the expected names.\n\nWindowsmacOS\n\n\nIn current versions of Windows 11:\n\nOpen File Explorer.\nSelect View.\nSelect Show.\nTurn on File name extensions.\n\nThe full filenames should now display extensions such as .csv, .xlsx, and .qmd. The precise menu layout may vary by Windows version.\n\n\nTo show extensions in Finder:\n\nOpen Finder.\nIn the menu bar, select Finder and then Settings (called Preferences in some older macOS versions).\nOpen the Advanced section.\nEnable Show all filename extensions.\n\nFinder should now display extensions for files when they are available. The precise wording may vary by macOS version.\n\n\n\n\nImportant caution when renaming files\nWhen renaming a file, be careful not to remove or change its extension unintentionally. If you change penguins.csv to penguins.txt, the file’s contents may still be CSV data even though its name now suggests a text file. Some applications may no longer recognize the file as expected.\nTo convert a file, use the appropriate application’s Save As or Export function rather than simply changing the extension.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#creating-and-managing-folders",
     "href": "content/section_0001.html#creating-and-managing-folders",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "5. Creating and Managing Folders",
     "text": "5. Creating and Managing Folders\nA simple folder structure can make course work easier to manage. For example, you might keep each week’s lecture materials and data in a separate folder, or use a project folder with subfolders for data, scripts, and outputs.\n\nWindowsmacOS\n\n\nIn File Explorer:\n\nNavigate to the location where you want the folder.\nRight-click an empty area of the folder window.\nSelect New and then Folder.\nType a name and press Enter.\n\nYou can also use the New button in File Explorer when it is available.\n\n\nIn Finder:\n\nNavigate to the location where you want the folder.\nOpen the File menu and select New Folder, or use the Finder’s available New Folder command.\nType a name and press Return.\n\nYou can also create a folder from the context menu in many Finder views.\n\n\n\n\nMoving and copying files\nCopying creates another copy of a file or folder, while moving changes its location. Both operations are available through the file manager’s menus and keyboard shortcuts.\nBefore moving or renaming files used in a data analysis project, consider whether another file refers to their original locations. For example, a script that reads data/penguins.csv may stop working if you move the CSV file without updating the script or its path.\n\n\nKeep project files together\nFor reproducible work, it is often best to keep related data, code, and documentation in a common project folder. A project might look like this:\npenguin_analysis/\n├── data/\n│   └── penguins.csv\n├── scripts/\n│   └── clean_data.R\n├── reports/\n│   └── analysis.qmd\n└── output/\n    └── summary_table.csv\nThis is only an example. Use a structure that fits the project and any instructions provided for the course. Avoid creating many layers of folders unless they make the project easier to navigate.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#practical-file-management-habits",
     "href": "content/section_0001.html#practical-file-management-habits",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "6. Practical File-Management Habits",
     "text": "6. Practical File-Management Habits\nGood file management is not just about knowing where files are stored. It also involves developing consistent habits.\n\nCheck where you are saving. Before saving or downloading a file, confirm the destination folder.\nUse descriptive names. A name such as penguin_bill_lengths.csv is more informative than data2.csv.\nKeep raw data unchanged. When possible, preserve the original data and save cleaned or modified versions separately.\nSeparate inputs from outputs. Keep source data, scripts, reports, and generated results organized.\nUse consistent naming conventions. Lowercase filenames and underscores can make names easier to work with in code.\nBe careful with extensions. Do not assume that renaming a file changes its format.\nCheck paths when something goes wrong. If an application cannot find a file, verify the folder location and filename.\n\nThese habits help prevent common errors and make it easier for other people to follow your work.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#summary",
     "href": "content/section_0001.html#summary",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "Summary",
     "text": "Summary\nFiles store information, while folders organize files and other folders into a hierarchy. Windows uses File Explorer and commonly represents paths with drive letters and backslashes; macOS uses Finder and commonly represents paths with forward slashes. A file path identifies an item’s location, and a file extension often indicates its format or the applications that can open it.\nFor this course, use descriptive filenames, lowercase letters, and underscores as word separators. Keep related project files organized, check where you save them, and remember that changing a file’s extension does not convert its contents to another format.",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0001.html#review-questions",
     "href": "content/section_0001.html#review-questions",
-    "title": "Understanding Files, Folders, and File Types",
+    "title": "Section 0.1: Files, Folders, and File Types",
     "section": "Review Questions",
     "text": "Review Questions\n\nWhat is the difference between a file and a folder?\nWhat information does a file path provide?\nWhich application do you use to browse files in Windows? Which one do you use in macOS?\nWhat does a file extension usually tell you? Give two examples.\nWhy does changing data.csv to data.xlsx not convert the file into an Excel workbook?\nHow can you display file extensions in Windows and macOS?\nGive two file-naming conventions that can make data-analysis projects easier to manage.\nWhy is it useful to keep related data files, scripts, and reports in a common project folder?",
     "crumbs": [
       "Chapter 0: Understanding Files, Folders, and File Types",
-      "Understanding Files, Folders, and File Types"
+      "Section 0.1: Files, Folders, and File Types"
     ]
   },
   {
     "objectID": "content/section_0102.html",
     "href": "content/section_0102.html",
-    "title": "Section 1.3: Data Entry in Excel",
+    "title": "Section 1.2: Data Entry in Excel",
     "section": "",
     "text": "There are two basic ways of working with data in Excel. The first is data entry, and the second is working with formulas. Data entry is the process of recording the values of a dataset into an Excel workbook. Working with formulas allows us to perform mathematical manipulations on existing data.",
     "crumbs": [
       "Chapter 1: Foundations in Excel",
-      "Section 1.3: Data Entry in Excel"
+      "Section 1.2: Data Entry in Excel"
     ]
   },
   {
     "objectID": "content/section_0102.html#example-1.3.1.",
     "href": "content/section_0102.html#example-1.3.1.",
-    "title": "Section 1.3: Data Entry in Excel",
+    "title": "Section 1.2: Data Entry in Excel",
     "section": "Example 1.3.1.",
     "text": "Example 1.3.1.\nThe table below is an example of tidy data.\n\n\n\nName\nBreed\nWeight (lbs)\n\n\n\n\nBella\nLabrador Retriever\n65\n\n\nMax\nGerman Shepherd\n75\n\n\nCarter\nMixed\n68\n\n\nDaisy\nBeagle\n22\n\n\nLucy\nMixed\n40\n\n\nRocky\nBulldog\n50\n\n\nMolly\nBeagle\n20\n\n\nBuddy\nSiberian Husky\n60\n\n\nSadie\nMixed\n35\n\n\nCooper\nBulldog\n48",
     "crumbs": [
       "Chapter 1: Foundations in Excel",
-      "Section 1.3: Data Entry in Excel"
+      "Section 1.2: Data Entry in Excel"
     ]
   },
   {
     "objectID": "content/section_0102.html#footnotes",
     "href": "content/section_0102.html#footnotes",
-    "title": "Section 1.3: Data Entry in Excel",
+    "title": "Section 1.2: Data Entry in Excel",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIn a relational database, tidy data is known as the first normal form.↩︎",
     "crumbs": [
       "Chapter 1: Foundations in Excel",
-      "Section 1.3: Data Entry in Excel"
+      "Section 1.2: Data Entry in Excel"
     ]
   },
   {
