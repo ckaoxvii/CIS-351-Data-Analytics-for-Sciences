@@ -1,0 +1,7 @@
+---
+title: "Section 1.1: Introduction to File Management"
+---
+
+A sound file management system and work flow are part of best practices in modern data science. Throughout this course, you will create, download, open, modify, and save many different types of files. Keeping these files organized will make it easier for you and your collaborators to locate your data. It also ensures your data analyses remain reproducible.
+
+In this section, we will introduce basic file management terminology and examine how _files_ and _directories_ (folders) are organized in Windows and macOS operating systems.
