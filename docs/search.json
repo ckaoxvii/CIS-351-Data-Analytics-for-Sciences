@@ -83,7 +83,6 @@
     "section": "",
     "text": "We often collect and record data in units that are most convenient to us. However, these units may not always be the ones we need when performing calculations. For example, we may record the lengths of tortoises in inches but later need to convert these values to centimeters or meters. In instances such as this, we can write basic formulas to transform existing data.",
     "crumbs": [
-      "Syllabus",
       "Chapter 1: Foundations in Excel",
       "Section 1.4: Using Formulas in Excel"
     ]
@@ -95,7 +94,6 @@
     "section": "Footnotes",
     "text": "Footnotes\n\n\n1 lb is roughly equal to 0.453592 kg.↩︎",
     "crumbs": [
-      "Syllabus",
       "Chapter 1: Foundations in Excel",
       "Section 1.4: Using Formulas in Excel"
     ]
@@ -107,21 +105,19 @@
     "section": "",
     "text": "Let us now open the Excel app.\n\nWindowsmacOS\n\n\nTo open Excel in Windows, type in “Excel” in the Windows search bar and click on the Excel icon to open the app. Alternatively, you can press the Windows key to bring up the search bar in the Start Menu.\n\n\n\n\n\n\n\nTo open Excel in macOS, open the Spotlight search bar by pressing Cmd + Space, then type in “Excel”.\n\n\n\n\n\n\n\n\nExcel will first open to its template window. To begin data entry, double click on Blank Workbook.\n\n\n\n\n\nThere are two main parts to each Excel spreadsheet: the sheets and the Ribbon.\n\nThe sheet is the area where you enter and view data, including values and formulas.\nThe Ribbon provides shortcuts to Excel commands and tools, making it easier to format, organize, and analyze your spreadsheet.\n\n\n\nThe Ribbon\nThe row above the Ribbon are the Tabs, it is a menu of different groups of commands. An icon in the Ribbon is called a command. Sometimes a command icon has a dropdown menu which displays more commands.\n\n\n\nThe Sheet\nA sheet is a spreadsheet made up of columns and rows. Each individual rectangle within the sheet is called a cell. Cells are where you enter data, such as values and formulas.\n\nColumns are labeled using the English alphabet: A, B, C, etc.\nRows are labeled with numbers: 1, 2, 3, etc.\n\nEach cell is identified by its column letter and row number, such as A1 or C5. When a cell is highlighted, its reference value is displayed in the Name Box.\n\nEach sheet is labeled by the sheet tab at the bottom of each sheet.\n\nTo rename a sheet, right click (or click with two fingers) to bring up the context menu and select Rename.\n\n\n\nWorking with Multiple Sheets\nIt is possible to work with multiple datasets by saving them on separate sheets within the same Excel workbook. There are several ways to add a new sheet in the current workbook. The easiest method is to click on the “+” symbol to the right of the sheet name tab.",
     "crumbs": [
-      "Syllabus",
       "Chapter 1: Foundations in Excel",
       "Section 1.2: Introduction to Excel"
     ]
   },
   {
-    "objectID": "content/appendix_A.html",
-    "href": "content/appendix_A.html",
-    "title": "Appendix A",
+    "objectID": "content/appendix_B.html",
+    "href": "content/appendix_B.html",
+    "title": "Appendix B",
     "section": "",
-    "text": "By default, the macOS Finder does not show the path to the current directory/folder.\n\n\n\n\n\nTo show the Path Bar, click View in the menu bar, then select Show Path Bar.\n\n\n\n\n\nOnce selected, the Path Bar will appear at the bottom of the Finder window.",
+    "text": "If you wish to maximize the working window in macOS, it is preferable not to use full-screen mode. Instead, hover (do not click) your cursor over the green traffic light button in the top-left corner of the app window, then select maximize. This option retains the menu bar at the top of the screen.",
     "crumbs": [
-      "Syllabus",
       "Appendices",
-      "Appendix A"
+      "Appendix B"
     ]
   },
   {
@@ -132,15 +128,25 @@
     "text": "About this site"
   },
   {
-    "objectID": "content/appendix_B.html",
-    "href": "content/appendix_B.html",
-    "title": "Appendix B",
+    "objectID": "content/appendix_A.html",
+    "href": "content/appendix_A.html",
+    "title": "Appendix A",
     "section": "",
-    "text": "If you wish to maximize the working window in macOS, it is preferable not to use full-screen mode. Instead, hover (do not click) your cursor over the green traffic light button in the top-left corner of the app window, then select maximize. This option retains the menu bar at the top of the screen.",
+    "text": "By default, the macOS Finder does not show the path to the current directory/folder.\n\n\n\n\n\nTo show the Path Bar, click View in the menu bar, then select Show Path Bar.\n\n\n\n\n\nOnce selected, the Path Bar will appear at the bottom of the Finder window.",
     "crumbs": [
-      "Syllabus",
       "Appendices",
-      "Appendix B"
+      "Appendix A"
+    ]
+  },
+  {
+    "objectID": "content/section_0101.html",
+    "href": "content/section_0101.html",
+    "title": "Section 1.1: Introduction to File Management",
+    "section": "",
+    "text": "A sound file management system and work flow are part of best practices in modern data science. Throughout this course, you will create, download, open, modify, and save many different types of files. Keeping these files organized will make it easier for you and your collaborators to locate your data. It also ensures your data analyses remain reproducible.\nIn this section, we will introduce basic file management terminology and examine how files and directories (folders) are organized in Windows and macOS operating systems.",
+    "crumbs": [
+      "Chapter 1: Foundations in Excel",
+      "Section 1.1: Introduction to File Management"
     ]
   },
   {
@@ -150,7 +156,6 @@
     "section": "",
     "text": "There are two basic ways of working with data in Excel. The first is data entry, and the second is working with formulas. Data entry is the process of recording the values of a dataset into an Excel workbook. Working with formulas allows us to perform mathematical manipulations on existing data.",
     "crumbs": [
-      "Syllabus",
       "Chapter 1: Foundations in Excel",
       "Section 1.3: Data Entry in Excel"
     ]
@@ -162,7 +167,6 @@
     "section": "Example 1.3.1.",
     "text": "Example 1.3.1.\nThe table below is an example of tidy data.\n\n\n\nName\nBreed\nWeight (lbs)\n\n\n\n\nBella\nLabrador Retriever\n65\n\n\nMax\nGerman Shepherd\n75\n\n\nCarter\nMixed\n68\n\n\nDaisy\nBeagle\n22\n\n\nLucy\nMixed\n40\n\n\nRocky\nBulldog\n50\n\n\nMolly\nBeagle\n20\n\n\nBuddy\nSiberian Husky\n60\n\n\nSadie\nMixed\n35\n\n\nCooper\nBulldog\n48",
     "crumbs": [
-      "Syllabus",
       "Chapter 1: Foundations in Excel",
       "Section 1.3: Data Entry in Excel"
     ]
@@ -174,7 +178,6 @@
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIn a relational database, tidy data is known as the first normal form.↩︎",
     "crumbs": [
-      "Syllabus",
       "Chapter 1: Foundations in Excel",
       "Section 1.3: Data Entry in Excel"
     ]
@@ -186,7 +189,6 @@
     "section": "",
     "text": "1. Opening A New Quarto Document\nTo open a new Quarto document, click the New icon on the top left corner of Position and select New File…. This will prompt another dropdown menu in the top center of Positron. Select Quarto Document.\n\n\n\n\n\n\n\nWarning\n\n\n\nIf you opened a new Quarto document but do not see the template, then you may need to hide the lower panel. You can do this by CtrlCtrl + jj in Windows or commandcommand + jj in macOS.\n\n\n\n\n2. The YAML Header\nAny new Quarto document includes a document header called YAML header. YAML lets us set options to how we want the document to look. The YAML header is enclosed by two sets of --- (lines 1 and 4) and it is within this set of --- we will specify our YAML mappings.\n\n\nUntitled-1.qmd\n\n---\ntitle: \"Untitled\"\nformat: html\n---\n\nRewrite your YAML header so it looks like\n\n\nUntitled-1.qmd\n\n---\ntitle: \"CIS 351: Week X Lecture Y\"\nsubtitle: \"Today's Topic\"\nauthor: \"Your Name\"\nformat:\n  html:\n    embed-resources: true\n---\n\n\n\n\n\n\n\nWarningYAML Syntax\n\n\n\n\nBe sure that your code looks exactly like mine. Except for the text inside quotation marks, you must follow the same punctuation and capitalization as shown above.\nThere is one indent in front of html: on line 6 and two indents in front of embed-resources: true on line 7.\n\n\n\nAlthough this is optional, but it is a good idea to check the Render on Save box so Positron will automatically save the file for you whenever it renders the Quarto document.\n\n\n\n\n\n\n\n3. Saving the Quarto Document\nTo save the current Quarto document, go to the top menu bar and click on File, then select Save As…. A new window will open where you can to navigate to the appropriate folder (Week X, Homework, etc). If the Quarto document is lecture notes, then use the file name week_x_lecture_y.qmd. If it is a homework assignment, then use the file name assignment_x_last_name.qmd.\n\n\n\n\n\n\nConventionConvention\n\n\n\n\nIf you are using a Mac, make sure that your file name ends with .qmd.\nOnly use lowercase letters in file names, and always use _ as the word separator. For example, week_x_lecture_y.qmd, not Week x lecture y.qmd\n\n\n\n\n\n4. Writing Content in the Quarto Document\nFor the most part, content in a Quarto document are written in Quarto markdown (which is why Quarto documents use the .qmd file extension). Quarto markdown is a derivative of the markdown language.",
     "crumbs": [
-      "Syllabus",
       "Chapter 2: Foundations in R",
       "Section 2.1: Introduction to Quarto Docs"
     ]
