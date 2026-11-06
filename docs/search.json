@@ -293,28 +293,6 @@
     ]
   },
   {
-    "objectID": "content/section_0202.html",
-    "href": "content/section_0202.html",
-    "title": "Section 2.2: Introduction to R",
-    "section": "",
-    "text": "R is a programming language that was designed to perform statistical and data analyses.\ncos(pi / 2)",
-    "crumbs": [
-      "Chapter 2: Foundations in R",
-      "Section 2.2: Introduction to R"
-    ]
-  },
-  {
-    "objectID": "content/section_0202.html#fundamentals-of-r",
-    "href": "content/section_0202.html#fundamentals-of-r",
-    "title": "Section 2.2: Introduction to R",
-    "section": "",
-    "text": "R is a programming language that was designed to perform statistical and data analyses.\ncos(pi / 2)",
-    "crumbs": [
-      "Chapter 2: Foundations in R",
-      "Section 2.2: Introduction to R"
-    ]
-  },
-  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
